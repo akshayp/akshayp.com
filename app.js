@@ -8,7 +8,7 @@ var express = require('express'),
 app.use(poet.middleware());
 app.use(express.static('public'));
 app.use(app.router);
-require('./routes')(app);
+require('./conf/routes')(app);
 
 poet.set({
     postsPerPage: 8
