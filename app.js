@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express'),
     exphbs  = require('express3-handlebars'),
     app     = express(),
@@ -22,8 +24,14 @@ hbs = exphbs.create({
 
     helpers: {
         uppercase: function (text) { return text.charAt(0).toUpperCase() + text.slice(1); },
-        month: function (date) { return moment(date).format("MMM"); },
-        day: function (date) { return moment(date).format("D"); }
+        month: function (date) { return moment(date).format('MMM'); },
+        day: function (date) { return moment(date).format('D'); },
+        eq: function (context, options) {
+            if (context === options.hash.compare) {
+                return options.fn(this);
+            }
+            return options.inverse(this);
+        }
     }
 });
 
@@ -32,8 +40,8 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.configure('production', function(){
-  app.use(express.errorHandler()); 
-  app.enable('view cache');
+    app.use(express.errorHandler()); 
+    app.enable('view cache');
 });
 
 app.listen(app.get('port'));
