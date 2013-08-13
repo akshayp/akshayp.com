@@ -1,0 +1,577 @@
+/*
+  Theme Name:Scribbles
+  Theme URI:www.akshayp.com
+  Description: Custom Lightweight Typgraphic theme
+  Author: Akshay Patel
+  Version: 3.0
+*/
+
+/* Base Styles */
+body {
+  color: #777; 
+  line-height: 1.9em;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+@font-face {
+font-family: 'entypo-social';
+src: url('/fonts/entypo-social.eot');
+src: url('/fonts/entypo-social.eot?#iefix') format('embedded-opentype'),
+     url('/fonts/entypo-social.woff') format('woff'),
+     url('/fonts/entypo-social.ttf') format('truetype'),
+     url('/fonts/entypo-social.svg#svgFontName') format('svg');
+}
+
+#doc,
+#menu,
+.pure-menu-link {
+    transition: all 0.2s ease-out;
+}
+
+#doc {
+    background: transparent url(/img/bg.png) repeat;
+    padding-left: 252px;
+    left: 0;
+}
+
+#menu {
+    margin-left: -252px;
+    width: 252px;
+    position: fixed;
+    top: 0;
+    left: 252px;
+    bottom: 0;
+    z-index: 1000;
+    background: #191818;
+    overflow-y: auto;
+    -webkit-overflow-scroll: touch;
+}
+
+#main {
+  padding: 15px 10px;
+}
+
+#ft {
+    font-size: 80%;
+    border-top: 1px solid #eee;
+    padding: 0.5em 0;
+    background: rgb(250, 250, 250);
+    text-align: center;
+}
+
+a {
+    color: #1f8dd6;
+    text-decoration: none;
+}
+
+a.external,
+a.external:visited,
+a.external:active {
+    background: #EEE;
+    font-size: 108%;
+    line-height: 2em;
+    padding: 4px 10px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 15px;
+  margin: 10px 0;
+  padding: 7px;
+  background: #FFF;
+  border: 1px solid #CCC;
+}
+
+strong {
+    font-weight: bold;
+}
+
+blockquote,
+pre,
+.fourohfour-error {
+    color: #343333;
+    border: 1px solid #C5C5C6;
+    border-left-width: 4px;
+    box-shadow: #FFF 0 1px 1px inset;
+    border-radius: 4px;
+    font-size: 108%;
+    background-color: #FFF;
+    padding: 10px 50px;
+    line-height: 1.3em;
+    margin: 10px 0;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-shadow: #F7F8F9 0 1px 0;
+}
+
+pre strong,
+blockquote strong {
+    color: #343333;
+    font-weight: bold;
+}
+
+blockquote:before, 
+blockquote:after {
+    font-family: Georgia;
+    color: #C5C5C6;
+    display: block;
+    font-size: 700%;
+    height: 0;
+}
+
+blockquote:before {
+    content: '\201C';
+    margin: 30px 0 0 -40px;
+}
+
+blockquote:after {
+    content: '\201D';
+    margin: 0 0 0 100%;
+}
+
+blockquote cite {
+    color: #900;
+    margin: 10px 0 0;
+    display: block;
+}
+
+blockquote ol,
+blockquote ul {
+    margin: 0 12px;
+    padding: 0 8px;
+    line-height: 1em;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+p img {
+    max-width: 100%;
+}
+
+.centered {
+    border: 1px solid #DDD;
+    display: block;
+    margin: 0 auto;
+}
+
+.alignright,
+.alignleft {
+    border: 1px solid #DDD;
+    display: inline;
+    padding: 5px;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+/* Navigation */
+#menu h1 {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+#menu a {
+    color: #999;
+    border: none;
+    white-space: normal;
+    
+}
+
+#menu li a {
+    padding: 0.6em 0 0.6em 0.6em;
+}
+
+#menu .pure-menu-open {
+    background: transparent;
+    border: 0;
+}
+
+#menu .pure-menu ul {
+    border: none;
+    background: transparent;
+}
+
+#menu .pure-menu ul,
+#menu .pure-menu .menu-item-divided {
+    border-top: 1px solid #333;
+}
+
+#menu .pure-menu li a:hover,
+#menu .pure-menu li a:focus {
+    background: #333;
+}
+
+.pure-menu-link {
+    display: none;
+    top: 0;
+    left: 150px;
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    padding: 0.75em 1em;
+}
+
+.pure-menu-link:hover,
+.pure-menu-link:focus {
+    background: #000;
+}
+
+#menu .pure-menu-heading {
+    font-size: 110%;
+    color: #fff;
+    padding: 0 8px;
+    text-align: right;
+    -webkit-animation: spin 1s;
+    -moz-animation-name: spin 1s;
+    -webkit-transform: rotate(-7deg);
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(-7deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(-7deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(-7deg);}
+}
+
+#menu .pure-menu-heading:hover,
+#menu .pure-menu-heading:focus {
+    color: #999;
+}
+
+#menu .pure-menu-selected  {
+    background: #1f8dd6;
+}
+
+#menu .social a:hover,
+#menu .pure-menu-selected a {
+    transition: all 0.2s ease-out;
+    color: #FFF;
+}
+
+#menu li.pure-menu-selected a:hover,
+#menu li.pure-menu-selected a:focus {
+    background: none;
+}
+
+.about img {
+  height: 50px;
+  width: 50px;
+  margin: 5px 8px 0 0;
+  float: left;
+}
+
+/* Content */
+.post {
+    border-bottom: 1px double #BBB;
+    margin: 0 0 20px;
+    overflow: hidden;
+    padding: 0 15px 10px;
+    zoom: 1;
+}
+
+.post a:hover,
+a.external:hover {
+    background: #F2E127;
+    color: #333;
+}
+
+.post a img {
+    border: none;
+    margin: 5px;
+}
+
+.post iframe {
+    border: none;
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+}
+
+.post h2 {
+    font-size: 197%;
+    line-height: 1.1em;
+    padding: 10px 0 15px;
+    margin: 0;
+}
+
+.post h2 a,
+.post h2 a:hover,
+.post h2 a:visited:hover,
+.post h2 a:visited {
+    background: none;
+    color: #343333;
+}
+
+.post h3 {
+    font-size: 19px;
+    color: #555;
+}
+
+a.more-link {
+    padding: 5px 0;
+}
+
+a.more-link span {
+    color : #AAA;
+    font-size: 26px;
+    position: relative;
+    top: 3px;
+}
+
+time {
+    color: #343333;
+    display: block;
+    float: left;
+    font-size: 146%;
+    padding: 17px 9px 3px 0;
+}
+
+img.alignleft:after,
+img.alignright:after,
+.post:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*Social Icons*/
+.social {
+    font: 47px/20px 'entypo-social', Arial, sans-serif;
+    display: block;  
+    margin: 10px 0;
+    overflow: hidden;
+    text-align: center;
+    zoom: 1;
+}
+
+.social a {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+/*Prettify*/
+/* Vim sunburst theme by David Leibovic */
+
+pre .str, code .str { color: #65B042; }
+pre .kwd, code .kwd { color: #E28964; }
+pre .com, code .com { color: #AEAEAE; font-style: italic; }
+pre .typ, code .typ { color: #89bdff; }
+pre .lit, code .lit { color: #3387CC; }
+pre .pun, code .pun { color: #fff; }
+pre .pln, code .pln { color: #fff; }
+pre .tag, code .tag { color: #89bdff; }
+pre .atn, code .atn { color: #mainb76b; }
+pre .atv, code .atv { color: #65B042; }
+pre .dec, code .dec { color: #3387CC; }
+
+pre.prettyprint, code.prettyprint {
+    background-color: #000;
+ï»¿ border-radius: 8px;
+    border: none;
+    color: #65B042;
+    display: block;
+    text-shadow: none;
+    padding: 1em;
+}
+
+pre.prettyprint {
+    width: 95%;
+    margin: 1em 0;
+    white-space: pre-wrap;
+}
+
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; }
+ol.linenums li { list-style-type: none }
+
+@media print {
+  pre .str, code .str { color: #060; }
+  pre .kwd, code .kwd { color: #006; font-weight: bold; }
+  pre .com, code .com { color: #600; font-style: italic; }
+  pre .typ, code .typ { color: #404; font-weight: bold; }
+  pre .lit, code .lit { color: #044; }
+  pre .pun, code .pun { color: #440; }
+  pre .pln, code .pln { color: #000; }
+  pre .tag, code .tag { color: #006; font-weight: bold; }
+  pre .atn, code .atn { color: #404; }
+  pre .atv, code .atv { color: #060; }
+}
+
+/*404*/
+.fourohfour-error-image {
+    display: block;
+    height: 500px;
+    margin: 10px auto;
+    width: 500px;
+}
+
+/* Archives */
+
+.annual-archives {
+    margin: 10px 0;
+}
+
+.archives .post {
+    border-bottom: none;
+}
+
+.archives .annual-archives li span {
+    float: right;
+    margin: 0 20px 0 0;
+    font-weight: bold;
+}
+
+/* Portfolio */
+
+#main.portfolio .post {
+    background: none;
+    border: none;
+    box-shadow: none;   
+    padding: 0;
+}
+
+.portfolio .post ul {
+    padding-left: 0;
+}
+
+.portfolio .post ul li {
+    margin: 5px;
+    width: 32%;
+}
+
+.portfolio .post ul li a {
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px #888;
+    display: block;
+    padding: 10px;
+}
+
+.portfolio .post ul li a:hover {
+    background: #222;
+}
+
+.portfolio .post ul li a:hover span {
+    color: #EEE;
+}
+
+.portfolio .post ul li img {
+    height: auto;
+    margin: 0;
+    width: 100%;
+}
+
+.portfolio .post ul li span {
+    color: #333;
+    display: block;
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+        #doc {
+            background: transparent url(/img/bg@2x.png) repeat;
+        }
+}
+
+/* Smartphone */
+@media only screen and (max-width: 767px) {
+    #main,
+    #main.portfolio {
+        margin-left: 0;
+        padding: 0 10px;
+        width: 94%;
+    }
+    
+    /*generics*/
+    blockquote, 
+    pre, 
+    .fourohfour-error {
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    blockquote:before {
+      margin: 30px 0 0 0;
+        font-size: 550%;
+    }
+
+    blockquote:after {
+      margin: 0 0 0 90%;
+        font-size: 550%;
+    }
+    
+    #menu h1 {
+        margin-bottom: 0;
+    }
+    
+    time {
+        font-size: 21px;
+    }
+    
+    #main .post:first-child > time,
+    #main.archives .post h2 {
+        margin-left: 35px;
+    }
+
+    #doc {
+        position: relative;
+        padding-left: 0;
+    }
+    
+    #doc.active {
+        position: relative;
+        left: 252px;
+    }
+    
+    #doc.active #menu {
+        left: 252px;
+        width: 252px;
+    }
+
+    #menu {
+        left: 0;
+    }
+
+    .pure-menu-link {
+        position: fixed;
+        left: 0;
+        display: block;
+    }
+
+    #doc.active .pure-menu-link {
+        left: 252px;
+        background: #333;
+    }
+    
+    /* Misc */
+    .fourohfour-error-image {
+        height: auto;
+        width: 90%;
+    }
+    
+    .portfolio .post ul {
+        padding: 0 10px 0;
+    }
+
+    .portfolio .post ul li {
+        display: block;
+        height: auto;
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+}

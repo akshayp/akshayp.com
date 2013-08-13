@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Unstructured Scribbles | Something about Everything</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="index" title="Unstructured Scribbles | Something about Everything" href="http://www.akshayp.com">
+    <script src="http://yui.yahooapis.com/3.10.3/build/yui/yui-min.js"></script>
+    <script src="http://use.typekit.net/fak3xli.js"></script>
+    <script src="/js/site.js"></script>
+</head>
+<body>
+<div id="doc" class="pure-g-r">
+    <a href="#menu" id="menuLink" class="pure-menu-link">
+        <img src="/img/navicon-png2x.png" width="20" alt="Menu toggle"/>
+    </a>
+    <div id="menu" class="pure-u">
+        <div class="pure-menu pure-menu-open">
+            <h1><a href="http://www.akshayp.com">Unstructured Scribbles</a></h1>
+            {{> nav}}
+            {{> profile}}
+        </div>
+    </div>
+    <div id="main" class="pure-u {{#if portfolio}}portfolio{{/if}}">
+        {{{body}}}
+    </div>
+    <div id="ft" class="pure-u-1">
+        {{> footer}}
+    </div>
+</div>
+</body>
+</html>
