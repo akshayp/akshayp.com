@@ -377,17 +377,15 @@ pre .atn, code .atn { color: #mainb76b; }
 pre .atv, code .atv { color: #65B042; }
 pre .dec, code .dec { color: #3387CC; }
 
-pre.prettyprint, code.prettyprint {
+pre.prettyprint,
+code.prettyprint {
     background-color: #000;
-ï»¿ border-radius: 8px;
+    border-radius: 8px;
     border: none;
     color: #65B042;
     display: block;
     text-shadow: none;
     padding: 1em;
-}
-
-pre.prettyprint {
     width: 95%;
     margin: 1em 0;
     white-space: pre-wrap;
@@ -395,19 +393,6 @@ pre.prettyprint {
 
 ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; }
 ol.linenums li { list-style-type: none }
-
-@media print {
-  pre .str, code .str { color: #060; }
-  pre .kwd, code .kwd { color: #006; font-weight: bold; }
-  pre .com, code .com { color: #600; font-style: italic; }
-  pre .typ, code .typ { color: #404; font-weight: bold; }
-  pre .lit, code .lit { color: #044; }
-  pre .pun, code .pun { color: #440; }
-  pre .pln, code .pln { color: #000; }
-  pre .tag, code .tag { color: #006; font-weight: bold; }
-  pre .atn, code .atn { color: #404; }
-  pre .atv, code .atv { color: #060; }
-}
 
 /*404*/
 .fourohfour-error-image {
