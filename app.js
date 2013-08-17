@@ -39,8 +39,8 @@ app.set('port', process.env.PORT || 3000);
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-app.configure('production', function(){
-    app.use(express.errorHandler()); 
+app.configure('production', function () {
+    app.use(express.errorHandler());
     app.enable('view cache');
 });
 
