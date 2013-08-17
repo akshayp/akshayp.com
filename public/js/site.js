@@ -1,37 +1,35 @@
-/*globals YUI:true,Typekit:true,_gat:true,prettyPrint:true */
+/*globals Typekit:true, prettyPrint:true, document: true */
+'use strict';
 
 Typekit.load();
 
-YUI({
-    modules : {
-        'google-tracking': {
-            fullpath: 'http://www.google-analytics.com/ga.js'
-        },
-        'prettify': {
-            fullpath: 'http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js'
-        },
-        'modernizer': {
-            fullpath: 'http://html5shiv.googlecode.com/svn/trunk/html5.js'
+var menu = document.getElementById('menu'),
+    menuLink = document.getElementById('menuLink'),
+    layout = document.getElementById('doc'),
+    toggleClass = function (element, className) {
+        var classes = element.className.split(/\s+/),
+            length = classes.length,
+            i = 0;
+
+        for (; i < length; i++) {
+            if (classes[i] === className) {
+                classes.splice(i, 1);
+                break;
+            }
         }
-    }
-}).use('node-base', 'event-base', 'google-tracking', function (Y) {
-    'use strict';
 
-    var pageTracker = _gat._getTracker('UA-10284621-2');
-    pageTracker._trackPageview();
+        if (length === classes.length) {
+            classes.push(className);
+        }
 
-    if (Y.UA.ie < 9 && Y.UA.ie > 5) { Y.use('modernizer'); }
+        element.className = classes.join(' ');
+    };
 
-    Y.on('domready', function () {
+menuLink.onclick = function (e) {
+    e.preventDefault();
+    var active = 'active';
+    toggleClass(layout, active);
+    toggleClass(menu, active);
+};
 
-        if (Y.one('.prettyprint')) {  Y.use('prettify', function () { prettyPrint(); }); }
-
-        /*Mobile Nav*/
-        Y.one('#menuLink').on('click', function (e) {
-            e.preventDefault();
-            Y.one('#doc').toggleClass('active');
-            Y.one('#menu').toggleClass('active');
-        });
-    });
-
-});
+prettyPrint();

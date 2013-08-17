@@ -1,4 +1,5 @@
-var nav = require(__dirname + '/nav')();
+var nav = require(__dirname + '/nav')(),
+    combo  = require('combohandler');
 
 module.exports = function (app) {
     'use strict';
@@ -41,6 +42,8 @@ module.exports = function (app) {
             page: 'portfolio'
         });
     });
+
+    app.get('/combo', combo.combine({rootPath: 'public'}), combo.respond);
 
     app.get('/:post', function (req, res) {
         var post = req.poet.getPost(req.params.post);
