@@ -19,7 +19,7 @@ module.exports = function (grunt) {
             }
         },
         vendor: {
-            pure: 'http://yui.yahooapis.com/pure/0.2.0/pure-min.css',
+            pure: 'http://yui.yahooapis.com/pure/0.2.1/pure-min.css',
             html5shiv: 'http://html5shiv.googlecode.com/svn/trunk/html5.js',
             prettify: 'http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js'
         }
