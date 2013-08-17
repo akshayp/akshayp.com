@@ -4,5 +4,3 @@ The bus ride from Rome to Padua was gorgeous . Passing through the Italian count
 ![Lamentation](/img/upload/giotto_-_scrovegni_-_-36-_-_lamentation_the_mourning_of_christ-300x281.jpg "Lamentation")
 
 Venizia is a magical place. I am still amazed at how people still manage to continue their daily activities using boats. I have to say though, there is a foul smell throughout the city. Never figured that one out. The whole city is covered with art and history. My highlights of Venice can be summed up into Academia, Peggy Guggenheim and St Marks Square. The Ferrari store there was particularly entertaining :) Check out my photos on [Flickr](http://www.flickr.com/photos/akshayp/sets/72157625260108771/ "Venice Photos") . They essentially document my entire trip through Venice.
-
-![St Mark](/img/upload/dscn0900.jpg "St Mark")
