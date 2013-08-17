@@ -1,2 +1,0 @@
-{{{"title" : "NYC, Las Vegas","link" : "/nyc-las-vegas/","category" : "Travel","id" : "219","date" : "2008-12-03 09:49:50"}}}
-[![New York, Las Vegas](/img/upload/marsnyc-300x225.jpg "NYC")](/img/upload/marsnyc.jpg)

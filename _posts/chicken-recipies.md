@@ -1,7 +1,7 @@
 {{{"title" : "Chicken Recipies","link" : "/chicken-recipies/","category" : "Food","id" : "712","date" : "2009-06-28 21:51:46"}}}
 I know this is not the purpose of my blog. I am not supposed to post recipes, since I am no chef. My mother gave me these recipes some time back. I decided to try some of them out and they came out surprisingly well, so i think its time to share them.
 
-#### 1) Chicken Tikka[![ChickenTikka](/img/upload/ChickenTikka-150x150.jpg "ChickenTikka")](/img/upload/ChickenTikka.jpg)
+#### 1) Chicken Tikka[![ChickenTikka](/img/upload/ChickenTikka.jpg "ChickenTikka")](/img/upload/ChickenTikka.jpg)
 
 **Ingredients:**
 1)Chicken Pieces(very imp)
@@ -12,7 +12,7 @@ Mix all ingredients and refrigerate for 2 hours. Roast chicken on charcoal
 
 <!--more-->
 
-#### 2) Pahadi Kabab[![DSCN1293](/img/upload/DSCN1293-150x150.jpg "DSCN1293")](/img/upload/DSCN1293.jpg)
+#### 2) Pahadi Kabab[![DSCN1293](/img/upload/DSCN1293.jpg "DSCN1293")](/img/upload/DSCN1293.jpg)
 
 **Ingredients:**
 1)Chicken pieces
@@ -21,7 +21,7 @@ Mix all ingredients and refrigerate for 2 hours. Roast chicken on charcoal
 **Method:**
 Mix all ingredients with the chicken and refrigerate for 2 hours. Roast the chicken on charcoal
 
-#### 3) Reshmi Kabab[![Reshmi Kabab](/img/upload/Reshmi-Kabab-150x150.jpg "Reshmi Kabab")](/img/upload/Reshmi-Kabab.jpg)
+#### 3) Reshmi Kabab[![Reshmi Kabab](/img/upload/Reshmi-Kabab.jpg "Reshmi Kabab")](/img/upload/Reshmi-Kabab.jpg)
 
 **Ingredients:**
 1)Sauté breast pieces of chicken

@@ -7,4 +7,4 @@ Here's the search:
 
 Here's the follow up page:
 
-[![Linked in Profile](/img/upload/akshay-profile-300x202.jpg "Follow Up")](/img/upload/akshay-profile.jpg)
+[![Linked in Profile](/img/upload/akshay-profile.jpg "Follow Up")](/img/upload/akshay-profile.jpg)
