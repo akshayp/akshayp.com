@@ -8,6 +8,7 @@ var express = require('express'),
     hbs;
 
 app.use(poet.middleware());
+app.use(express.compress());
 app.use(express.static('public'));
 app.use(app.router);
 require('./conf/routes')(app);
@@ -17,7 +18,6 @@ poet.set({
 }).createPostRoute('/:post', 'post')
   .createCategoryRoute('/category/:category', 'index')
   .init();
-
 
 hbs = exphbs.create({
     defaultLayout: 'main',
