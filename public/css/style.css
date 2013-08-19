@@ -404,17 +404,12 @@ ol.linenums li { list-style-type: none }
 
 /* Archives */
 
-.annual-archives {
-    margin: 10px 0;
-}
-
-.archives .post {
+.archives {
     border-bottom: none;
 }
 
-.archives .annual-archives li span {
-    float: right;
-    margin: 0 20px 0 0;
+.archives li span {
+    margin: 0 0 0 10px;
     font-weight: bold;
 }
 
@@ -508,7 +503,7 @@ ol.linenums li { list-style-type: none }
     }
     
     #main .post:first-child > time,
-    #main.archives .post h2 {
+    #main .post h2 {
         margin-left: 35px;
     }
 

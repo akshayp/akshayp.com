@@ -43,6 +43,18 @@ module.exports = function (app) {
         });
     });
 
+    app.get('/archives', function (req, res) {
+
+        var postCount = req.poet.getPostCount(),
+            posts = req.poet.getPosts(0, postCount);
+
+        res.render('archives', {
+            posts: posts,
+            nav: nav,
+            page: 'archives'
+        });
+    });
+
     app.get('/combo', combo.combine({rootPath: 'public'}), combo.respond);
 
     app.get('/:post', function (req, res) {
