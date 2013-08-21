@@ -6,7 +6,7 @@ module.exports = function (grunt) {
             options: {
                 jshintrc: '.jshintrc'
             },
-            all: ['Gruntfile.js', '{conf,public,tasks}/**/*.js', 'app.js', '!public/vendor/**/*.js']
+            all: ['Gruntfile.js', '{conf,public,tasks,test}/**/*.js', 'app.js', 'index.js', '!public/vendor/**/*.js']
         },
         imagemin: {
             dynamic: {
