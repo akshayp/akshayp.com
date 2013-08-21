@@ -8,9 +8,6 @@
         "node": "0.10.x"
     },
     "main": "app.js",
-    "scripts": {
-        "test": "istanbul cover --print summary _mocha -- -R spec && ((cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js) || exit 0)"
-    },
     "dependencies": {
         "express": "3.2.6",
         "express3-handlebars": "0.4.1",
@@ -38,6 +35,7 @@
         "www.akshayp.com"
     ],
     "scripts": {
-        "start": "node app.js"
+        "start": "node app.js",
+        "test": "istanbul cover --print summary _mocha -- -R spec && ((cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js) || exit 0)"
     }
 }
