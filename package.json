@@ -7,7 +7,7 @@
     "engines": {
         "node": "0.10.x"
     },
-    "main": "app.js",
+    "main": "index.js",
     "dependencies": {
         "express": "3.2.6",
         "express3-handlebars": "0.4.1",
@@ -23,6 +23,7 @@
         "mocha": "*",
         "chai": "*",
         "istanbul": "*",
+        "supertest": "*",
         "coveralls": "2.1.0"
     },
     "repository": {
@@ -35,7 +36,7 @@
         "www.akshayp.com"
     ],
     "scripts": {
-        "start": "node app.js",
+        "start": "node index.js",
         "test": "istanbul cover --print summary _mocha -- -R spec && ((cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js) || exit 0)"
     }
 }
