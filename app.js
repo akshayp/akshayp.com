@@ -45,3 +45,4 @@ app.configure('production', function () {
 });
 
 app.listen(app.get('port'));
+exports.server = app;

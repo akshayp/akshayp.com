@@ -8,6 +8,9 @@
         "node": "0.10.x"
     },
     "main": "app.js",
+    "scripts": {
+        "test": "istanbul cover --print summary _mocha -- -R spec && ((cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js) || exit 0)"
+    },
     "dependencies": {
         "express": "3.2.6",
         "express3-handlebars": "0.4.1",
@@ -19,7 +22,11 @@
     "devDependencies": {
         "grunt": "~0.4.1",
         "grunt-contrib-jshint": "~0.6.3",
-        "grunt-contrib-imagemin": "~0.2.0"
+        "grunt-contrib-imagemin": "~0.2.0",
+        "mocha": "*",
+        "chai": "*",
+        "istanbul": "*",
+        "coveralls": "2.1.0"
     },
     "repository": {
         "type": "git",
