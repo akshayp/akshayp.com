@@ -1,26 +1,25 @@
 /* jshint expr: true, unused: false */
-/*global describe, it*/
+/*global describe, it, afterEach, beforeEach*/
 'use strict';
 
 var should = require('chai').should();
 
-describe('blog startup', function () {
+describe('Blog', function () {
+    process.env.NODE_ENV = 'production';
+
+    var app = require('../app'),
+        server;
+
+    beforeEach(function () {
+        server = app.listen(3000);
+    });
+
     it('can be started without blowing up', function () {
-        process.env.NODE_ENV = 'production';
-        var app = require('../app'),
-            cache;
-
         app.should.not.be.undefined;
-        
-        app = app.server;
-        cache = app.get('view cache');
-
-        cache.should.be.true;
+        app.get('view cache').should.be.true;
     });
 
     it('can use handlebars helpers and render a dummy category and post', function (done) {
-        var app = require('../app').server;
-
         app.render('index', {
 
             category: 'test',
@@ -55,5 +54,9 @@ describe('blog startup', function () {
             html.should.contain('<li class="pure-menu-selected"><a href="/">Home</a></li>');
             done();
         });
+    });
+
+    afterEach(function () {
+        server.close();
     });
 });
