@@ -20,7 +20,8 @@ module.exports = function () {
         {
             'key': 'code',
             'description': 'Code',
-            'url': 'http://akshayp.github.io/'
+            'url': 'http://akshayp.github.io/',
+            'external': true
         },
         {
             'key': 'geektool-scripts',

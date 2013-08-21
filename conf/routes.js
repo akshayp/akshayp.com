@@ -1,8 +1,16 @@
+'use strict';
+
 var nav = require(__dirname + '/nav')(),
-    combo  = require('combohandler');
+    combo  = require('combohandler'),
+    error = function (req, res) {
+        res.status(404);
+        res.render('404', {
+            nav: nav,
+            page: 'home'
+        });
+    };
 
 module.exports = function (app) {
-    'use strict';
 
     app.get('/', function (req, res) {
 
@@ -55,7 +63,37 @@ module.exports = function (app) {
         });
     });
 
+    app.get('/sitemap.xml', function (req, res) {
+
+        var postCount = req.poet.getPostCount(),
+            posts = req.poet.getPosts(0, postCount),
+            cats = req.poet.categoryList;
+
+        res.setHeader('Content-Type', 'application/xml');
+        res.render('', {
+            posts: posts,
+            pages: nav,
+            categories: cats,
+            layout: 'sitemap'
+        });
+    });
+
     app.get('/combo', combo.combine({rootPath: 'public'}), combo.respond);
+
+    app.get('/category/:category', function (req, res) {
+        var categorizedPosts = req.poet.postsWithCategory(req.params.category);
+
+        if (categorizedPosts.length) {
+            res.render('index', {
+                posts: categorizedPosts,
+                category: req.params.category,
+                nav: nav,
+                page: 'home'
+            });
+        } else {
+            error(req, res);
+        }
+    });
 
     app.get('/:post', function (req, res) {
         var post = req.poet.getPost(req.params.post);
@@ -63,19 +101,9 @@ module.exports = function (app) {
         if (post) {
             res.render('post', { post: post });
         } else {
-            res.status(404);
-            res.render('404', {
-                nav: nav,
-                page: 'home'
-            });
+            error(req, res);
         }
     });
 
-    app.get('*', function (req, res) {
-        res.status(404);
-        res.render('404', {
-            nav: nav,
-            page: 'home'
-        });
-    });
+    app.get('*', error);
 };
