@@ -5,7 +5,7 @@ var express = require('express'),
     app     = express(),
     poet    = require('poet')(app),
     moment  = require('moment'),
-    hbs;
+    hbs, server;
 
 app.use(poet.middleware());
 app.use(express.compress());
@@ -44,5 +44,6 @@ app.configure('production', function () {
     app.enable('view cache');
 });
 
-app.listen(app.get('port'));
-exports.server = app;
+server = app.listen(app.get('port'));
+exports.server = server;
+exports.app = app;
