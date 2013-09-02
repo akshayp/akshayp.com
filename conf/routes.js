@@ -99,7 +99,7 @@ module.exports = function (app) {
         var post = req.poet.getPost(req.params.post);
 
         if (post) {
-            res.render('post', { post: post });
+            res.render('post', { post: post, nav: nav, page: 'home' });
         } else {
             error(req, res);
         }
