@@ -11,7 +11,7 @@ body {
   color: #777; 
   line-height: 1.9em;
   font-size: 15px;
-  font-family: sans-serif;
+  font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 }
 
 @font-face {
@@ -66,6 +66,7 @@ a {
 }
 
 a.external,
+.post p:last-child a:last-child,
 a.external:visited,
 a.external:active {
     background: #EEE;
@@ -76,7 +77,6 @@ a.external:active {
 
 h4 {
   font-weight: 600;
-  font-size: 15px;
   margin: 10px 0;
   padding: 7px;
   background: #FFF;
@@ -152,24 +152,6 @@ p img {
     max-width: 100%;
 }
 
-.centered {
-    border: 1px solid #DDD;
-    display: block;
-    margin: 0 auto;
-}
-
-.alignright,
-.alignleft {
-    border: 1px solid #DDD;
-    display: inline;
-    padding: 5px;
-}
-
-.alignright {
-    float: right;
-    margin: 0 0 15px 15px;
-}
-
 /* Navigation */
 #menu h1 {
     font-size: 22px;
@@ -226,22 +208,7 @@ p img {
     color: #fff;
     padding: 0 8px;
     text-align: right;
-    -webkit-animation: spin 1s;
-    -moz-animation-name: spin 1s;
-    -webkit-transform: rotate(-7deg);
-}
-
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(-7deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(-7deg); }
-}
-@keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(-7deg);}
+    font-family: "Futura";
 }
 
 #menu .pure-menu-heading:hover,
@@ -264,11 +231,20 @@ p img {
     background: none;
 }
 
+.about {
+    padding: 0.6em 0.6em 0.6em 0.6em;
+}
+
 .about img {
   height: 50px;
   width: 50px;
   margin: 5px 8px 0 0;
   float: left;
+  border-radius: 50%;
+}
+
+.about a {
+    padding: 0;
 }
 
 /* Content */
@@ -281,7 +257,7 @@ p img {
 }
 
 .post a:hover,
-a.external:hover {
+.post p:last-child a:hover:last-child {
     background: #F2E127;
     color: #333;
 }
@@ -300,8 +276,7 @@ a.external:hover {
 
 .post h2 {
     font-size: 197%;
-    line-height: 1.1em;
-    padding: 10px 0 15px;
+    padding: 10px 0 0;
     margin: 0;
 }
 
@@ -318,27 +293,14 @@ a.external:hover {
     color: #555;
 }
 
-a.more-link {
-    padding: 5px 0;
-}
-
-a.more-link span {
-    color : #AAA;
-    font-size: 26px;
-    position: relative;
-    top: 3px;
-}
-
 time {
     color: #343333;
     display: block;
     float: left;
     font-size: 146%;
-    padding: 17px 9px 3px 0;
+    padding: 12px 9px 3px 0;
 }
 
-img.alignleft:after,
-img.alignright:after,
 .post:after {
     content: ".";
     display: block;
@@ -351,7 +313,6 @@ img.alignright:after,
 .social {
     font: 47px/20px 'entypo-social', Arial, sans-serif;
     display: block;  
-    margin: 10px 0;
     overflow: hidden;
     text-align: center;
     zoom: 1;
@@ -359,7 +320,6 @@ img.alignright:after,
 
 .social a {
     display: inline-block;
-    padding: 5px 0;
 }
 
 /*Prettify*/

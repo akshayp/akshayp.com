@@ -1,7 +1,5 @@
-/*globals Typekit:true, prettyPrint:true, document: true */
+/*globals prettyPrint:true, document: true */
 'use strict';
-
-Typekit.load();
 
 var menu = document.getElementById('menu'),
     menuLink = document.getElementById('menuLink'),
