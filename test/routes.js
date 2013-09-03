@@ -60,6 +60,10 @@ describe('Routes', function () {
         request(app).get('/category/404/').expect(404, done);
     });
 
+    it('can GET /404/404/404', function (done) {
+        request(app).get('/404/404/404').expect(404, done);
+    });
+
     afterEach(function () {
         server.close();
     });
