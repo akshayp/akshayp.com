@@ -8,37 +8,26 @@ var nav = require(__dirname + '/nav')(),
             nav: nav,
             page: 'home'
         });
-    };
+    }, helpers;
 
-module.exports = function (app) {
+module.exports = function (app, poet) {
+    helpers = poet.helpers;
 
     app.get('/', function (req, res) {
 
         res.render('index', {
-            posts: req.poet.getPosts(0, 8),
+            posts: helpers.getPosts(0, 8),
             nav: nav,
             page: 'home'
         });
     });
 
-    app.get('/about', function (req, res) {
-        res.render('about', {
-            nav: nav,
-            page: 'about'
-        });
-    });
+    app.get('/:page(about|geektool-scripts|perl)', function (req, res) {
+        var page = req.params.page;
 
-    app.get('/geektool-scripts', function (req, res) {
-        res.render('geektool-scripts', {
+        res.render(page, {
             nav: nav,
-            page: 'geektool-scripts'
-        });
-    });
-
-    app.get('/perl', function (req, res) {
-        res.render('perl', {
-            nav: nav,
-            page: 'perl'
+            page: page
         });
     });
 
@@ -53,8 +42,8 @@ module.exports = function (app) {
 
     app.get('/archives', function (req, res) {
 
-        var postCount = req.poet.getPostCount(),
-            posts = req.poet.getPosts(0, postCount);
+        var postCount = helpers.getPostCount(),
+            posts = helpers.getPosts(0, postCount);
 
         res.render('archives', {
             posts: posts,
@@ -65,9 +54,9 @@ module.exports = function (app) {
 
     app.get('/sitemap.xml', function (req, res) {
 
-        var postCount = req.poet.getPostCount(),
-            posts = req.poet.getPosts(0, postCount),
-            cats = req.poet.categoryList;
+        var postCount = helpers.getPostCount(),
+            posts = helpers.getPosts(0, postCount),
+            cats = helpers.getCategories();
 
         res.setHeader('Content-Type', 'application/xml');
         res.render('', {
@@ -80,8 +69,8 @@ module.exports = function (app) {
 
     app.get('/combo', combo.combine({rootPath: 'public'}), combo.respond);
 
-    app.get('/category/:category', function (req, res) {
-        var categorizedPosts = req.poet.postsWithCategory(req.params.category);
+    poet.addRoute('/category/:category', function (req, res) {
+        var categorizedPosts = helpers.postsWithCategory(req.params.category);
 
         if (categorizedPosts.length) {
             res.render('index', {
@@ -95,8 +84,8 @@ module.exports = function (app) {
         }
     });
 
-    app.get('/:post', function (req, res) {
-        var post = req.poet.getPost(req.params.post);
+    poet.addRoute('/:post', function (req, res) {
+        var post = helpers.getPost(req.params.post);
 
         if (post) {
             res.render('post', { post: post, nav: nav, page: 'home' });
@@ -105,5 +94,7 @@ module.exports = function (app) {
         }
     });
 
-    app.get('*', error);
+    app.use(function (req, res) {
+        error(req, res);
+    });
 };

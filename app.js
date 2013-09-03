@@ -7,17 +7,12 @@ var express = require('express'),
     moment  = require('moment'),
     hbs;
 
-app.use(poet.middleware());
+poet.init();
+
 app.use(express.compress());
 app.use(express.static('public'));
 app.use(app.router);
-require('./conf/routes')(app);
-
-poet.set({
-    postsPerPage: 8
-}).createPostRoute('/:post', 'post')
-  .createCategoryRoute('/category/:category', 'index')
-  .init();
+require('./conf/routes')(app, poet);
 
 hbs = exphbs.create({
     defaultLayout: 'main',
