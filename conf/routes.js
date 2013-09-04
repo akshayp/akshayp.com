@@ -67,7 +67,7 @@ module.exports = function (app, poet) {
         });
     });
 
-    app.get('/combo', combo.combine({rootPath: 'public'}), combo.respond);
+    app.get('/combo', combo.combine({ rootPath: 'public' }), combo.respond);
 
     poet.addRoute('/category/:category', function (req, res) {
         var categorizedPosts = helpers.postsWithCategory(req.params.category);
