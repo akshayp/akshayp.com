@@ -1,4 +1,4 @@
-/*globals prettyPrint:true, document: true */
+/*globals document: true */
 'use strict';
 
 var menu = document.getElementById('menu'),
@@ -29,5 +29,3 @@ menuLink.onclick = function (e) {
     toggleClass(layout, active);
     toggleClass(menu, active);
 };
-
-prettyPrint();
