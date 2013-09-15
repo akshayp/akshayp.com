@@ -1,6 +1,6 @@
 {
     "name": "akshayp.com",
-    "version": "0.0.1-18",
+    "version": "0.0.1-20",
     "description": "Code powering http://akshayp.com",
     "author": "Akshay Patel <akshayrpatel@gmail.com>",
     "private": true,
@@ -20,11 +20,14 @@
         "grunt": "~0.4.1",
         "grunt-contrib-jshint": "~0.6.3",
         "grunt-contrib-imagemin": "~0.2.0",
+        "grunt-contrib-uglify": "~0.2.4",
+        "grunt-contrib-concat": "~0.3.0",
         "mocha": "*",
         "chai": "*",
         "istanbul": "*",
         "supertest": "*",
-        "coveralls": "2.1.0"
+        "coveralls": "2.1.0",
+        "traverse": "0.6.5"
     },
     "repository": {
         "type": "git",
