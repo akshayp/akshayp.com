@@ -8,12 +8,17 @@
 
 /* Base Styles */
 body {
-  color: #4d4d4d;
-  line-height: 1.9em;
-  font-size: 15px;
-  font-weight: 400;
-  font-family: "proxima-nova",'Helvetica Neue','Helvetica',sans-serif;
-  -webkit-font-smoothing: antialiased;
+    color: #4d4d4d;
+    line-height: 1.9em;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    font-family: "proxima-nova",'Helvetica Neue','Helvetica',sans-serif;
 }
 
 @font-face {
