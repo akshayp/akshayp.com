@@ -126,10 +126,6 @@ code {
     display: block;
 }
 
-code {
-    padding-bottom: 20px;
-}
-
 blockquote cite {
     color: #900;
     margin: 10px 0 0;
@@ -284,68 +280,51 @@ time {
 }
 
 /* Color Code */
+code {
+    padding-bottom: 20px;
+    background: #000000;
+    color: #eaeaea;
+    border-color: #666;
+}
 
 code .comment {
-    color: #998;
+    color: #969896;
 }
 
-code .support {
-    color: #0086B3;
-}
-
-code .tag,
-code .tag-name {
-    color: navy;
-}
-
-code .keyword,
-code .css-property,
-code .vendor-prefix,
-code .sass,
-code .class,
-code .id,
-code .css-value,
-code .entity.function,
-code .storage.function {
-    font-weight: bold;
-}
-
-code .css-property,
-code .css-value,
-code .vendor-prefix,
-code .support.namespace {
-    color: #333;
+code .variable.global,
+code .variable.class,
+code .variable.instance {
+    color: #d54e53;
 }
 
 code .constant.numeric,
-code .keyword.unit,
-code .hex-color {
-    font-weight: normal;
-    color: #099;
+code .constant.language,
+code .constant.hex-color,
+code .keyword.unit {
+    color: #e78c45;
 }
 
-code .entity.class {
-    color: #458;
+code .constant,
+code .entity,
+code .entity.class,
+code .support {
+    color: #e7c547;
 }
 
-code .entity.id,
-code .entity.function {
-    color: #900;
+code .constant.symbol,
+code .string {
+    color: #b9ca4a;
 }
 
-code .attribute,
-code .variable {
-    color: teal;
+code .entity.function,
+code .support.css-property,
+code .selector {
+    color: #7aa6da;
 }
 
-code .string,
-code .support.value  {
-    font-weight: normal;
-    color: #d14;
-}
-
-code .regexp {
-    color: #009926;
+code .keyword,
+code .storage {
+    color: #c397d8;
 }
 
 /* Archives */
