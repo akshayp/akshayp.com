@@ -6,7 +6,7 @@ module.exports = function (grunt) {
             options: {
                 jshintrc: '.jshintrc'
             },
-            all: ['Gruntfile.js', '{conf,public,tasks,test}/**/*.js', 'app.js', 'index.js', '!public/vendor/**/*.js']
+            all: ['Gruntfile.js', '{conf,public,tasks,test}/**/*.js', 'app.js', 'index.js', '!public/vendor/**/*.js', '!public/js/vendor.js']
         },
         imagemin: {
             dynamic: {
@@ -46,6 +46,13 @@ module.exports = function (grunt) {
                     'public/js/vendor.js': ['public/js/vendor.js']
                 }
             }
+        },
+        bump: {
+            options: {
+                commitMessage: 'Release v%VERSION%',
+                createTag: false,
+                gitDescribeOptions: '--always --abbrev=1 --dirty=-d'
+            }
         }
     });
 
@@ -54,6 +61,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-bump');
 
     grunt.registerTask('assets', ['vendor', 'concat', 'uglify']);
+    grunt.registerTask('release', ['jshint', 'test', 'bump:patch', 'deploy']);
 };
