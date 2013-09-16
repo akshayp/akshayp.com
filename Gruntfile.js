@@ -21,11 +21,39 @@ module.exports = function (grunt) {
         vendor: {
             pure: 'http://yui.yahooapis.com/pure/0.3.0/pure-min.css',
             html5shiv: 'http://html5shiv.googlecode.com/svn/trunk/html5.js',
-            prettify: 'http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js'
+            rainbow: [
+                'https://raw.github.com/ccampbell/rainbow/master/js/rainbow.js',
+                'https://raw.github.com/ccampbell/rainbow/master/js/language/generic.js',
+                'https://raw.github.com/ccampbell/rainbow/master/js/language/javascript.js',
+                'https://raw.github.com/ccampbell/rainbow/master/js/language/css.js',
+                'https://raw.github.com/ccampbell/rainbow/master/js/language/html.js',
+                'https://raw.github.com/ccampbell/rainbow/master/js/language/shell.js'
+            ]
+        },
+        concat: {
+            js: {
+                src: ['public/vendor/rainbow/rainbow.js', 'public/vendor/**/*.js'],
+                dest: 'public/js/vendor.js'
+            },
+            css: {
+                src: ['public/vendor/**/*.css'],
+                dest: 'public/css/vendor.css'
+            }
+        },
+        uglify: {
+            js: {
+                files: {
+                    'public/js/vendor.js': ['public/js/vendor.js']
+                }
+            }
         }
     });
 
     grunt.loadTasks('tasks');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+
+    grunt.registerTask('assets', ['vendor', 'concat', 'uglify']);
 };

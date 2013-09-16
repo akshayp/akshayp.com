@@ -5,7 +5,7 @@ The IR theme is one of the cleanest themes out there for terminal. Grab it from 
 
 **Put these settings in your .bashrc or .bash_profile**
 
-<pre class="prettyprint lang-bash linenums">
+<code data-language="shell">
 export COLOR_NC='\033[0m' # No Color
 export COLOR_WHITE='\033[1;37m'
 export COLOR_BLACK='\033[0;30m'
@@ -23,11 +23,12 @@ export COLOR_BROWN='\033[0;33m'
 export COLOR_YELLOW='\033[1;33m'
 export COLOR_GRAY='\033[1;30m'
 export COLOR_LIGHT_GRAY='\033[0;37m'
-</pre>
+</code>
 
 **Specify your shell to display time and current folder with home abbreviated as ~**
 
-<pre class="prettyprint lang-bash linenums">
-export PS1="[\[${COLOR_LIGHT_RED}\]\T\[${COLOR_NC}\]][ \[${COLOR_LIGHT_BLUE}\]\w \[${COLOR_NC}\]] \[${COLOR_PURPLE}\]&gt; \[${COLOR_NC}\]"</pre>
+<code data-language="shell">
+export PS1="[\[${COLOR_LIGHT_RED}\]\T\[${COLOR_NC}\]][ \[${COLOR_LIGHT_BLUE}\]\w \[${COLOR_NC}\]] \[${COLOR_PURPLE}\]&gt; \[${COLOR_NC}\]"
+</code>
 
 [via Todd Werth](http://blog.toddwerth.com/entries/13)
