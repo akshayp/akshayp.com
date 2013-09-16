@@ -1,6 +1,6 @@
 {
     "name": "akshayp.com",
-    "version": "0.0.1-20",
+    "version": "0.0.3",
     "description": "Code powering http://akshayp.com",
     "author": "Akshay Patel <akshayrpatel@gmail.com>",
     "private": true,
@@ -22,6 +22,7 @@
         "grunt-contrib-imagemin": "~0.2.0",
         "grunt-contrib-uglify": "~0.2.4",
         "grunt-contrib-concat": "~0.3.0",
+        "grunt-bump": "0.0.11",
         "mocha": "*",
         "chai": "*",
         "istanbul": "*",
