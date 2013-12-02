@@ -2,8 +2,6 @@ Code powering my personal blog hosted at [akshayp.com](http://akshayp.com) power
 
 ## Build
 
-[![Nodejitsu Deploy Status Badges](https://webhooks.nodejitsu.com/akshayp/akshayp.com.png)](https://webops.nodejitsu.com#akshayp/webhooks) 
-
 [![Dependency Status](https://david-dm.org/akshayp/akshayp.com.png)](https://david-dm.org/akshayp/akshayp.com)
 
 [![Coverage Status](https://coveralls.io/repos/akshayp/akshayp.com/badge.png?branch=master)](https://coveralls.io/r/akshayp/akshayp.com?branch=master)
