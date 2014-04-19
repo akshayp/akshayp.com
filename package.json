@@ -15,7 +15,8 @@
         "poet": "1.0.0-rc3",
         "moment": "2.6.x",
         "request": "~2.34.0",
-        "combohandler": "0.3.8"
+        "combohandler": "0.3.8",
+        "newrelic": "~1.5.1"
     },
     "devDependencies": {
         "grunt": "~0.4.1",
