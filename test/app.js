@@ -1,7 +1,5 @@
 /* jshint expr: true, unused: false */
 /*global describe, it, afterEach, beforeEach*/
-'use strict';
-
 var should = require('chai').should();
 
 describe('Blog', function () {

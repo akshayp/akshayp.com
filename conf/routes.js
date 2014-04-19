@@ -1,5 +1,3 @@
-'use strict';
-
 var nav = require(__dirname + '/nav')(),
     combo  = require('combohandler'),
     error = function (req, res) {

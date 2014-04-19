@@ -1,6 +1,4 @@
 module.exports = function () {
-    'use strict';
-
     return [
         {
             'key': 'home',
