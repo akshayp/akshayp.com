@@ -1,23 +1,13 @@
-/*
-  Theme Name:Scribbles
-  Theme URI:www.akshayp.com
-  Description: Custom Lightweight Typgraphic theme
-  Author: Akshay Patel
-  Version: 3.0
-*/
-
 /* Base Styles */
 body {
     color: #4d4d4d;
     line-height: 1.9em;
     font-size: 15px;
     font-weight: 400;
-    -webkit-font-smoothing: antialiased;
 }
 
 body,
-.pure-g [class *= "pure-u"],
-.pure-g-r [class *= "pure-u"] {
+.pure-g [class *= "pure-u"] {
     font-family: "proxima-nova",'Helvetica Neue','Helvetica',sans-serif;
 }
 
@@ -30,7 +20,6 @@ src: url('/fonts/entypo-social.eot?#iefix') format('embedded-opentype'),
      url('/fonts/entypo-social.svg#svgFontName') format('svg');
 }
 
-#doc,
 #menu,
 .pure-menu-link {
     transition: all 0.2s ease-out;

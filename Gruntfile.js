@@ -17,7 +17,7 @@ module.exports = function (grunt) {
             }
         },
         vendor: {
-            pure: 'http://yui.yahooapis.com/pure/0.4.2/pure-min.css',
+            pure: 'http://yui.yahooapis.com/pure/0.5.0/pure-min.css',
             html5shiv: 'http://html5shiv.googlecode.com/svn/trunk/html5.js',
             rainbow: [
                 'https://raw.github.com/ccampbell/rainbow/master/js/rainbow.js',
