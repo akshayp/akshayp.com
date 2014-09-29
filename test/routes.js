@@ -18,8 +18,8 @@ describe('Routes', function () {
         request(app).get('/').expect(200, done);
     });
 
-    it('can GET /enistein-mentos-ad/', function (done) {
-        request(app).get('/enistein-mentos-ad/').expect(200, done);
+    it('can GET /einstein-ate-mentos/', function (done) {
+        request(app).get('/einstein-ate-mentos/').expect(200, done);
     });
 
     it('can GET /category/Technology/', function (done) {
@@ -47,7 +47,7 @@ describe('Routes', function () {
     });
 
     it('can GET /sitemap.xml', function (done) {
-        request(app).get('/sitemap.xml').expect('Content-Type', 'application/xml').expect(200, done);
+        request(app).get('/sitemap.xml').expect('Content-Type', 'application/xml; charset=utf-8').expect(200, done);
     });
 
     it('can GET /404', function (done) {

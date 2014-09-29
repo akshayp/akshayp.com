@@ -23,7 +23,7 @@ describe('Blog', function () {
             category: 'test',
             posts: [{
                 title: 'Einstein ate Mentos!',
-                link: '/enistein-mentos-ad/',
+                link: '/einstein-ate-mentos/',
                 category: 'Geek Stuff',
                 id: '962',
                 date: 'Sun Oct 11 2009 10:28:30 GMT-0700 (PDT)',
