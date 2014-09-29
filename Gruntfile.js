@@ -62,5 +62,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-bump');
 
     grunt.registerTask('assets', ['vendor', 'concat', 'uglify']);
-    grunt.registerTask('release', ['jshint', 'test', 'bump:patch', 'deploy']);
+    grunt.registerTask('release', ['jshint', 'test', 'bump:patch']);
 };
