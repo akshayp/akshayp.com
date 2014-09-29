@@ -1,5 +1,5 @@
 var express  = require('express'),
-    exphbs   = require('express3-handlebars'),
+    exphbs   = require('express-handlebars'),
     env      = process.env.NODE_ENV || 'development',
     compress = require('compression')(),
     app      = express(),
@@ -34,7 +34,6 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 if ('production' === env) {
-    app.use(express.errorHandler());
     app.enable('view cache');
 }
 

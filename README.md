@@ -1,4 +1,4 @@
-Code powering my personal blog hosted at [akshayp.com](http://akshayp.com) powered by [Poet](http://jsantell.github.io/poet/), [Express](expressjs.com), [Handlebars](https://github.com/ericf/express3-handlebars) and [Pure CSS](http://purecss.io)
+Code powering my personal blog hosted at [akshayp.com](http://akshayp.com) powered by [Poet](http://jsantell.github.io/poet/), [Express](expressjs.com), [Handlebars](https://github.com/ericf/express-handlebars) and [Pure CSS](http://purecss.io)
 
 ## Build
 
