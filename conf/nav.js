@@ -27,11 +27,6 @@ module.exports = function () {
             'url': '/geektool-scripts/'
         },
         {
-            'key': 'perl',
-            'description': 'Perl',
-            'url': '/perl/'
-        },
-        {
             'key': 'portfolio',
             'description': 'Portfolio',
             'url': '/portfolio/'

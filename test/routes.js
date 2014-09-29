@@ -34,10 +34,6 @@ describe('Routes', function () {
         request(app).get('/geektool-scripts/').expect(200, done);
     });
 
-    it('can GET /perl/', function (done) {
-        request(app).get('/perl/').expect(200, done);
-    });
-
     it('can GET /portfolio/', function (done) {
         request(app).get('/portfolio/').expect(200, done);
     });
