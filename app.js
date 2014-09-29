@@ -1,6 +1,6 @@
 var express  = require('express'),
     exphbs   = require('express-handlebars'),
-    env      = process.env.NODE_ENV || 'development',
+    env      = process.env.NODE_ENV,
     compress = require('compression')(),
     app      = express(),
     poet     = require('poet')(app),

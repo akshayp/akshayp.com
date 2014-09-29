@@ -45,6 +45,6 @@
     "scripts": {
         "start": "node index.js",
         "lint": "grunt jshint",
-        "test": "istanbul cover --print summary _mocha -- -R spec && ((cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js) || exit 0)"
+        "test": "istanbul cover --print summary _mocha -- -R spec && ((cat coverage/lcov.info | coveralls) || exit 0)"
     }
 }
