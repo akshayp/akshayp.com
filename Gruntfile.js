@@ -6,16 +6,6 @@ module.exports = function (grunt) {
             },
             all: ['Gruntfile.js', '{conf,public,tasks,test}/**/*.js', 'app.js', 'index.js', '!public/vendor/**/*.js', '!public/js/vendor.js']
         },
-        imagemin: {
-            dynamic: {
-                files: [{
-                    expand: true,
-                    cwd: 'public/img/upload',
-                    src: ['**/*.{png,jpg,gif}'],
-                    dest: 'public/img/upload'
-                }]
-            }
-        },
         vendor: {
             pure: 'http://yui.yahooapis.com/pure/0.5.0/pure-min.css',
             html5shiv: 'http://html5shiv.googlecode.com/svn/trunk/html5.js',
@@ -56,7 +46,6 @@ module.exports = function (grunt) {
 
     grunt.loadTasks('tasks');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-bump');
