@@ -2,12 +2,6 @@
 
 module.exports = function (grunt) {
     grunt.initConfig({
-        eslint: {
-            options: {
-                quiet: true
-            },
-            target: ['**/*.js', '!public/vendor/**/*.js', '!public/js/vendor.js']
-        },
         vendor: {
             pure: 'http://yui.yahooapis.com/pure/0.5.0/pure-min.css',
             html5shiv: 'http://html5shiv.googlecode.com/svn/trunk/html5.js',
@@ -47,11 +41,9 @@ module.exports = function (grunt) {
     });
 
     grunt.loadTasks('tasks');
-    grunt.loadNpmTasks('grunt-eslint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-bump');
 
     grunt.registerTask('assets', ['vendor', 'concat', 'uglify']);
-    grunt.registerTask('release', ['eslint', 'test', 'bump:patch']);
 };

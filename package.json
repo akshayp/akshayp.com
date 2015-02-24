@@ -14,22 +14,22 @@
         "express-handlebars": "^1.1.0",
         "poet": "2.x",
         "moment": "^2.9.0",
-        "request": "^2.53.0",
         "combohandler": "0.4.x",
         "newrelic": "^1.16.1"
     },
     "devDependencies": {
-        "grunt": "^0.4.1",
-        "grunt-cli": "^0.1.3",
-        "grunt-eslint": "^7.0.0",
-        "grunt-contrib-uglify": "^0.7.0",
-        "grunt-contrib-concat": "^0.5.0",
-        "grunt-bump": "^0.1.0",
-        "mocha": "^2.1.0",
         "chai": "^1.10.0",
-        "istanbul": "^0.3.5",
-        "supertest": "^0.15.0",
         "coveralls": "^2.11.2",
+        "eslint": "^0.15.0",
+        "grunt": "^0.4.1",
+        "grunt-bump": "^0.1.0",
+        "grunt-cli": "^0.1.3",
+        "grunt-contrib-concat": "^0.5.0",
+        "grunt-contrib-uglify": "^0.7.0",
+        "istanbul": "^0.3.5",
+        "mocha": "^2.1.0",
+        "request": "^2.53.0",
+        "supertest": "^0.15.0",
         "traverse": "^0.6.6"
     },
     "repository": {
@@ -70,7 +70,8 @@
     },
     "scripts": {
         "start": "node index.js",
-        "lint": "grunt eslint",
-        "test": "istanbul cover --print summary _mocha -- -R spec && ((cat coverage/lcov.info | coveralls) || exit 0)"
+        "lint": "eslint .",
+        "test": "istanbul cover --dir artifacts -- _mocha test --reporter spec",
+        "release": "npm run lint && npm run test && grunt bump:patch"
     }
 }
