@@ -1,10 +1,12 @@
+'use strict';
+
 module.exports = function (grunt) {
     grunt.initConfig({
-        jshint: {
+        eslint: {
             options: {
-                jshintrc: '.jshintrc'
+                quiet: true
             },
-            all: ['Gruntfile.js', '{conf,public,tasks,test}/**/*.js', 'app.js', 'index.js', '!public/vendor/**/*.js', '!public/js/vendor.js']
+            target: ['**/*.js', '!public/vendor/**/*.js', '!public/js/vendor.js']
         },
         vendor: {
             pure: 'http://yui.yahooapis.com/pure/0.5.0/pure-min.css',
@@ -45,11 +47,11 @@ module.exports = function (grunt) {
     });
 
     grunt.loadTasks('tasks');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-eslint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-bump');
 
     grunt.registerTask('assets', ['vendor', 'concat', 'uglify']);
-    grunt.registerTask('release', ['jshint', 'test', 'bump:patch']);
+    grunt.registerTask('release', ['eslint', 'test', 'bump:patch']);
 };
