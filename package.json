@@ -1,11 +1,11 @@
 {
     "name": "akshayp.com",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "Code powering http://akshayp.com",
     "author": "Akshay Patel <akshayrpatel@gmail.com>",
     "private": true,
     "engines": {
-        "node": "0.12.x"
+        "iojs": "1.2.x"
     },
     "main": "index.js",
     "dependencies": {
