@@ -1,11 +1,12 @@
-var express  = require('express'),
-    exphbs   = require('express-handlebars'),
-    env      = process.env.NODE_ENV,
-    compress = require('compression')(),
-    app      = express(),
-    poet     = require('poet')(app),
-    moment   = require('moment'),
-    hbs;
+'use strict';
+
+var express = require('express');
+var exphbs = require('express-handlebars');
+var env = process.env.NODE_ENV;
+var compress = require('compression')();
+var app = express();
+var poet = require('poet')(app);
+var moment = require('moment');
 
 poet.init();
 
@@ -13,7 +14,7 @@ app.use(compress);
 app.use(express.static('public'));
 require('./conf/routes')(app, poet);
 
-hbs = exphbs.create({
+var hbs = exphbs.create({
     defaultLayout: 'main',
 
     helpers: {
@@ -33,7 +34,7 @@ app.set('port', process.env.PORT || 3000);
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-if ('production' === env) {
+if (env === 'production') {
     app.enable('view cache');
 }
 

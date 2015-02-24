@@ -56,6 +56,7 @@
             "no-undef": 2,
             "no-unused-vars": 2,
             "no-use-before-define": 2,
+            "padded-blocks": [2, "never"],
             "quotes": [2, "single"],
             "semi": 2,
             "space-before-blocks": 2,

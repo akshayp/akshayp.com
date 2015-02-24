@@ -1,14 +1,13 @@
-/* jshint expr: true, unused: false */
+/* eslint no-unused-vars: 0, no-unused-expressions: 0*/
 /*global describe, it, afterEach, beforeEach*/
-var should = require('chai').should(),
-    app = require('../app'),
-    blog = app.app,
-    server = app.server,
-    request = require('supertest');
+'use strict';
+
+var should = require('chai').should();
+var request = require('supertest');
 
 describe('Routes', function () {
-    var app = require('../app'),
-        server;
+    var app = require('../app');
+    var server;
 
     beforeEach(function () {
         server = app.listen(3000);

@@ -1,18 +1,21 @@
-var nav = require(__dirname + '/nav')(),
-    combo  = require('combohandler'),
-    error = function (req, res) {
-        res.status(404);
-        res.render('404', {
-            nav: nav,
-            page: 'home'
-        });
-    }, helpers;
+'use strict';
+
+var nav = require('./nav');
+var portfolio = require('./portfolio');
+var combo = require('combohandler');
+
+function error (req, res) {
+    res.status(404);
+    res.render('404', {
+        nav: nav,
+        page: 'home'
+    });
+}
 
 module.exports = function (app, poet) {
-    helpers = poet.helpers;
+    var helpers = poet.helpers;
 
     app.get('/', function (req, res) {
-
         res.render('index', {
             posts: helpers.getPosts(0, 8),
             nav: nav,
@@ -31,7 +34,7 @@ module.exports = function (app, poet) {
 
     app.get('/portfolio', function (req, res) {
         res.render('portfolio', {
-            sites: require(__dirname + '/portfolio')(),
+            sites: portfolio,
             portfolio: true,
             nav: nav,
             page: 'portfolio'
@@ -39,9 +42,8 @@ module.exports = function (app, poet) {
     });
 
     app.get('/archives', function (req, res) {
-
-        var postCount = helpers.getPostCount(),
-            posts = helpers.getPosts(0, postCount);
+        var postCount = helpers.getPostCount();
+        var posts = helpers.getPosts(0, postCount);
 
         res.render('archives', {
             posts: posts,
@@ -51,10 +53,9 @@ module.exports = function (app, poet) {
     });
 
     app.get('/sitemap.xml', function (req, res) {
-
-        var postCount = helpers.getPostCount(),
-            posts = helpers.getPosts(0, postCount),
-            cats = helpers.getCategories();
+        var postCount = helpers.getPostCount();
+        var posts = helpers.getPosts(0, postCount);
+        var cats = helpers.getCategories();
 
         res.setHeader('Content-Type', 'application/xml');
         res.render('', {

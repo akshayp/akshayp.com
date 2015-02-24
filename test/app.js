@@ -1,12 +1,14 @@
-/* jshint expr: true, unused: false */
+/* eslint no-unused-vars: 0, no-unused-expressions: 0*/
 /*global describe, it, afterEach, beforeEach*/
+'use strict';
+
 var should = require('chai').should();
 
 describe('Blog', function () {
     process.env.NODE_ENV = 'production';
 
-    var app = require('../app'),
-        server;
+    var app = require('../app');
+    var server;
 
     beforeEach(function () {
         server = app.listen(3000);
@@ -19,7 +21,6 @@ describe('Blog', function () {
 
     it('can use handlebars helpers and render a dummy category and post', function (done) {
         app.render('index', {
-
             category: 'test',
             posts: [{
                 title: 'Einstein ate Mentos!',
@@ -47,6 +48,10 @@ describe('Blog', function () {
             page: 'home'
 
         }, function (err, html) {
+            if (err) {
+                done(err);
+            }
+
             html.should.contain('<h4>Archive for the &#8216; Test &#8217; Category</h4>');
             html.should.contain('<time datetime="Sun Oct 11 2009 10:28:30 GMT-0700 (PDT)" pubdate><em>Oct</em> 11</time>');
             html.should.contain('<li class="pure-menu-selected"><a href="/">Home</a></li>');
