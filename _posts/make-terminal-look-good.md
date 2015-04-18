@@ -1,7 +1,7 @@
 {{{"title" : "Make Terminal look good","link" : "/make-terminal-look-good/","category" : "Technology","id" : "1678","date" : "2011-09-17 05:32:55"}}}
 The IR theme is one of the cleanest themes out there for terminal. Grab it from Todd's detailed blog linked below. I also use some of the colors from the theme to pretty up the shell a bit and make it look like:
 
-![Terminal Window](http://img.skitch.com/20111017-jdqcdfnp7mymbta83423x6wp2.png)
+![Terminal Window](/img/upload/fancy_iterm.png)
 
 **Put these settings in your .bashrc or .bash_profile**
 
