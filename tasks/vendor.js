@@ -51,7 +51,9 @@ module.exports = function (grunt) {
             var val = opts[key];
 
             if (val instanceof Array) {
-                val.forEach(function (file) { fetchAsset(file, key); });
+                val.forEach(function (file) {
+                    fetchAsset(file, key);
+                });
             } else {
                 fetchAsset(val, key);
             }

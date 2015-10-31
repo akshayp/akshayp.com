@@ -18,9 +18,15 @@ var hbs = exphbs.create({
     defaultLayout: 'main',
 
     helpers: {
-        uppercase: function (text) { return text.charAt(0).toUpperCase() + text.slice(1); },
-        month: function (date) { return moment(new Date(date)).format('MMM'); },
-        day: function (date) { return moment(new Date(date)).format('D'); },
+        uppercase: function (text) {
+            return text.charAt(0).toUpperCase() + text.slice(1);
+        },
+        month: function (date) {
+            return moment(new Date(date)).format('MMM');
+        },
+        day: function (date) {
+            return moment(new Date(date)).format('D');
+        },
         eq: function (context, options) {
             if (context === options.hash.compare) {
                 return options.fn(this);

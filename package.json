@@ -96,6 +96,9 @@
         "env": {
             "browser": true,
             "node": true
+        },
+        "ecmaFeatures": {
+            "templateStrings": true
         }
     },
     "scripts": {

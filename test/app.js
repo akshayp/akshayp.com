@@ -28,7 +28,12 @@ describe('Blog', function () {
                 category: 'Geek Stuff',
                 id: '962',
                 date: 'Sun Oct 11 2009 10:28:30 GMT-0700 (PDT)',
-                content: '<p><img src="http://29.media.tumblr.com/tumblr_krctjjD6sG1qzbi86o1_500.jpg" alt="" title="" /></p><p>Einstein endorses Mentos</p>',
+                content: `
+                    <p>
+                        <img src="http://29.media.tumblr.com/tumblr_krctjjD6sG1qzbi86o1_500.jpg" alt="" title="" />
+                    </p>
+                    <p>Einstein endorses Mentos</p>
+                `,
                 slug: 'enistein-mentos-ad',
                 url: '/enistein-mentos-ad',
                 preview: '<p><img src="http://29.media.tumblr.com/tumblr_krctjjD6sG1qzbi86o1_500.jpg" alt="" title="" /></p><p></p>'
@@ -53,7 +58,9 @@ describe('Blog', function () {
             }
 
             html.should.contain('<h4>Archive for the &#8216; Test &#8217; Category</h4>');
-            html.should.contain('<time datetime="Sun Oct 11 2009 10:28:30 GMT-0700 (PDT)" pubdate><em>Oct</em> 11</time>');
+            html.should.contain(`
+                <time datetime="Sun Oct 11 2009 10:28:30 GMT-0700 (PDT)" pubdate><em>Oct</em> 11</time>
+            `);
             html.should.contain('<li class="pure-menu-selected"><a href="/">Home</a></li>');
             done();
         });

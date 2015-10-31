@@ -1,4 +1,4 @@
-/*globals document: true */
+/* globals document: true */
 'use strict';
 
 var menu = document.getElementById('menu'),
