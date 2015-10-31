@@ -1,6 +1,6 @@
 language: node_js
+sudo: false
 node_js:
-  - 'iojs'
-  - '0.12'
+  - 4
 after_success:
   - "cat artifacts/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
