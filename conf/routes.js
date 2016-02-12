@@ -23,7 +23,7 @@ module.exports = function (app, poet) {
         });
     });
 
-    app.get('/:page(about|geektool-scripts)', function (req, res) {
+    app.get('/:page(about|geektool-scripts|code)', function (req, res) {
         var page = req.params.page;
 
         res.render(page, {

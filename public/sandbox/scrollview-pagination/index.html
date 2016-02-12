@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>ScrollView With Multiple Item Pagination</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+<link rel="stylesheet" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
+<style>
+	
+	.yui3-js-enabled .yui3-scrollview-loading {
+		display: none;
+	}
+	
+	#scrollview-container {
+		float: left;
+		margin: 0 10px;
+	}
+
+	#scrollview-container h1 {
+		display: none;
+	}
+	
+	#scrollview-content img {
+		border-width: 2px;
+		border-style: solid;
+		width: 300px;
+		margin: 10px;
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+
+	#scrollview-content {
+		white-space: nowrap;
+	}
+
+	#scrollview-content li {
+		display: inline-block;
+		*display:inline;
+		*zoom:1;
+		background-color: #FFF;
+	}
+
+	#scrollview-pager {
+		padding: 5px;
+	}
+</style>
+<script src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script> 
+</head> 
+<body class="yui3-skin-sam">
+	<div id="scrollview-container"> 
+		<h1>Paged ScrollView</h1> 
+	</div> 
+  <div id="scrollview-content" class="yui3-scrollview-loading"> 
+		<ul> 
+			<li><img src="http://farm5.static.flickr.com/4136/4802088086_c621e0b501.jpg" alt="Above The City II"></li> 
+			<li><img src="http://farm5.static.flickr.com/4114/4801461321_1373a0ef89.jpg" alt="Walls and Canyon"></li> 
+			<li><img src="http://farm5.static.flickr.com/4100/4801614015_4303e8eaea.jpg" alt="Stairs Using In Situ Stone"></li> 
+			<li><img src="http://farm5.static.flickr.com/4076/4801368583_854e8c0ef3.jpg" alt="Tree Silhouette"></li> 
+			<li><img src="http://farm5.static.flickr.com/4076/4801368583_854e8c0ef3.jpg" alt="Tree Silhouette"></li> 
+			<li><img src="http://farm5.static.flickr.com/4100/4801614015_4303e8eaea.jpg" alt="Stairs Using In Situ Stone"></li> 
+		</ul> 
+  </div> 
+	<div id="scrollview-pager"> 
+		<button id="scrollview-prev">Prev</button> 
+		<button id="scrollview-next">Next</button> 
+	</div> 
+	<script type="text/javascript" charset="utf-8"> 
+    YUI({
+			modules: {
+				'scrollview-paginator-plus': {
+					fullpath: 'paginator-plus.js'
+				}
+			}
+		}).use('scrollview', 'scrollview-paginator-plus', function(Y) {
+
+        var scrollView = new Y.ScrollView({
+	        srcNode : '#scrollview-content',
+	        width : 960,
+	        flick : {
+						minDistance:10,
+	          minVelocity:0.3,
+						axis: "x"
+	        }
+        });
+
+        scrollView.plug(Y.Plugin.ScrollViewPaginator, {
+					selector: 'li',
+					numItemsPerPage: 3
+        });
+				
+				scrollView.render();
+								
+        scrollView.get("contentBox").delegate("mousedown", function(e) {
+					e.preventDefault();
+        }, "img");
+
+        Y.one('#scrollview-next').on('click', Y.bind(scrollView.pages.next, scrollView.pages));
+        Y.one('#scrollview-prev').on('click', Y.bind(scrollView.pages.prev, scrollView.pages));
+    });
+  </script> 
+</body> 
+</html>

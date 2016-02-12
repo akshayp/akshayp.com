@@ -17,8 +17,7 @@
     {
         "key": "code",
         "description": "Code",
-        "url": "http://akshayp.github.io/",
-        "external": true
+        "url": "/code/"
     },
     {
         "key": "geektool-scripts",
