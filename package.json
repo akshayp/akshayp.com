@@ -5,7 +5,7 @@
     "author": "Akshay Patel <akshayrpatel@gmail.com>",
     "private": true,
     "engines": {
-        "node": "4.x"
+        "node": "6.x"
     },
     "main": "index.js",
     "dependencies": {
