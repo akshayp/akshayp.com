@@ -2,13 +2,13 @@
 /*global describe, it, afterEach, beforeEach*/
 'use strict';
 
-var should = require('chai').should();
+const should = require('chai').should();
 
 describe('Blog', function () {
     process.env.NODE_ENV = 'production';
 
-    var app = require('../app');
-    var server;
+    const app = require('../app');
+    let server;
 
     beforeEach(function () {
         server = app.listen(3000);
@@ -59,7 +59,7 @@ describe('Blog', function () {
 
             html.should.contain('<h4>Archive for the &#8216; Test &#8217; Category</h4>');
             html.should.contain(
-                `<time datetime="Sun Oct 11 2009 10:28:30 GMT-0700 (PDT)" pubdate><em>Oct</em> 11</time>`
+                '<time datetime="Sun Oct 11 2009 10:28:30 GMT-0700 (PDT)" pubdate><em>Oct</em> 11</time>'
             );
             html.should.contain('<li class="pure-menu-selected"><a href="/">Home</a></li>');
             done();

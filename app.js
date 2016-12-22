@@ -1,12 +1,12 @@
 'use strict';
 
-var express = require('express');
-var exphbs = require('express-handlebars');
-var env = process.env.NODE_ENV;
-var compress = require('compression')();
-var app = express();
-var poet = require('poet')(app);
-var moment = require('moment');
+const express = require('express');
+const exphbs = require('express-handlebars');
+const env = process.env.NODE_ENV;
+const compress = require('compression')();
+const app = express();
+const poet = require('poet')(app);
+const moment = require('moment');
 
 poet.init();
 
@@ -14,7 +14,7 @@ app.use(compress);
 app.use(express.static('public'));
 require('./conf/routes')(app, poet);
 
-var hbs = exphbs.create({
+const hbs = exphbs.create({
     defaultLayout: 'main',
 
     helpers: {

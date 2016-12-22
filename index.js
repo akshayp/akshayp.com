@@ -1,3 +1,3 @@
 require('newrelic');
-var app = require('./app');
+const app = require('./app');
 app.listen(app.get('port'));

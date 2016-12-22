@@ -1,8 +1,8 @@
 'use strict';
 
-var nav = require('./nav');
-var portfolio = require('./portfolio');
-var combo = require('combohandler');
+const nav = require('./nav');
+const portfolio = require('./portfolio');
+const combo = require('combohandler');
 
 function error (req, res) {
     res.status(404);
@@ -13,7 +13,7 @@ function error (req, res) {
 }
 
 module.exports = function (app, poet) {
-    var helpers = poet.helpers;
+    const helpers = poet.helpers;
 
     app.get('/', function (req, res) {
         res.render('index', {
@@ -24,7 +24,7 @@ module.exports = function (app, poet) {
     });
 
     app.get('/:page(about|geektool-scripts|code)', function (req, res) {
-        var page = req.params.page;
+        const page = req.params.page;
 
         res.render(page, {
             nav: nav,
@@ -42,8 +42,8 @@ module.exports = function (app, poet) {
     });
 
     app.get('/archives', function (req, res) {
-        var postCount = helpers.getPostCount();
-        var posts = helpers.getPosts(0, postCount);
+        const postCount = helpers.getPostCount();
+        const posts = helpers.getPosts(0, postCount);
 
         res.render('archives', {
             posts: posts,
@@ -53,9 +53,9 @@ module.exports = function (app, poet) {
     });
 
     app.get('/sitemap.xml', function (req, res) {
-        var postCount = helpers.getPostCount();
-        var posts = helpers.getPosts(0, postCount);
-        var cats = helpers.getCategories();
+        const postCount = helpers.getPostCount();
+        const posts = helpers.getPosts(0, postCount);
+        const cats = helpers.getCategories();
 
         res.setHeader('Content-Type', 'application/xml');
         res.render('', {
@@ -69,7 +69,7 @@ module.exports = function (app, poet) {
     app.get('/combo', combo.combine({ rootPath: 'public' }), combo.respond);
 
     poet.addRoute('/category/:category', function (req, res) {
-        var categorizedPosts = helpers.postsWithCategory(req.params.category);
+        const categorizedPosts = helpers.postsWithCategory(req.params.category);
 
         if (categorizedPosts.length) {
             res.render('index', {
@@ -84,7 +84,7 @@ module.exports = function (app, poet) {
     });
 
     poet.addRoute('/:post', function (req, res) {
-        var post = helpers.getPost(req.params.post);
+        const post = helpers.getPost(req.params.post);
 
         if (post) {
             res.render('post', { post: post, nav: nav, page: 'home' });

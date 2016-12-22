@@ -1,18 +1,18 @@
 'use strict';
 
-var request = require('request');
-var fs = require('fs');
-var url = require('url');
-var traverse = require('traverse');
+const request = require('request');
+const fs = require('fs');
+const url = require('url');
+const traverse = require('traverse');
 
 module.exports = function (grunt) {
     grunt.registerTask('vendor', 'Grab latest vendor files', function () {
-        var opts = grunt.config.get('vendor');
-        var done = this.async();
-        var keys = Object.keys(opts);
-        var numDone = 0;
+        const opts = grunt.config.get('vendor');
+        const done = this.async();
+        const keys = Object.keys(opts);
+        let numDone = 0;
 
-        var assets = traverse(opts).reduce(function (acc, x) {
+        const assets = traverse(opts).reduce(function (acc, x) {
             if (this.isLeaf) {
                 acc.push(x);
             }
@@ -20,7 +20,7 @@ module.exports = function (grunt) {
             return acc;
         }, []);
 
-        var length = assets.length;
+        const length = assets.length;
 
         function onReqDone () {
             numDone = numDone + 1;
@@ -31,10 +31,10 @@ module.exports = function (grunt) {
         }
 
         function getFileName (file, lib) {
-            var path = url.parse(file).path.split('/');
-            var filename = path[path.length - 1];
-            var dirpath = './public/vendor/' + lib;
-            var filepath = dirpath + '/' + filename;
+            const path = url.parse(file).path.split('/');
+            const filename = path[path.length - 1];
+            const dirpath = './public/vendor/' + lib;
+            const filepath = dirpath + '/' + filename;
 
             grunt.file.mkdir(dirpath);
 
@@ -42,13 +42,13 @@ module.exports = function (grunt) {
         }
 
         function fetchAsset (file, lib) {
-            var filepath = getFileName(file, lib);
-            var req = request(file, grunt.log.writeln('Fetching: ' + file)).pipe(fs.createWriteStream(filepath));
+            const filepath = getFileName(file, lib);
+            const req = request(file, grunt.log.writeln('Fetching: ' + file)).pipe(fs.createWriteStream(filepath));
             req.on('finish', onReqDone);
         }
 
         keys.forEach(function (key) {
-            var val = opts[key];
+            const val = opts[key];
 
             if (val instanceof Array) {
                 val.forEach(function (file) {

@@ -2,12 +2,12 @@
 /*global describe, it, afterEach, beforeEach*/
 'use strict';
 
-var should = require('chai').should();
-var request = require('supertest');
+const should = require('chai').should();
+const request = require('supertest');
 
 describe('Routes', function () {
-    var app = require('../app');
-    var server;
+    const app = require('../app');
+    let server;
 
     beforeEach(function () {
         server = app.listen(3000);

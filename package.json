@@ -20,16 +20,16 @@
     "devDependencies": {
         "chai": "^3.0.0",
         "coveralls": "^2.11.2",
-        "eslint": "^1.8.0",
-        "grunt": "^0.4.1",
-        "grunt-bump": "^0.7.0",
-        "grunt-cli": "^0.1.3",
-        "grunt-contrib-concat": "^0.5.0",
-        "grunt-contrib-uglify": "^0.11.0",
+        "eslint": "^3.12.0",
+        "grunt": "^1.0.0",
+        "grunt-bump": "^0.8.0",
+        "grunt-cli": "^1.2.0",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-uglify": "^2.0.0",
         "istanbul": "^0.4.0",
-        "mocha": "^2.1.0",
+        "mocha": "^3.2.0",
         "request": "^2.53.0",
-        "supertest": "^1.1.0",
+        "supertest": "^2.0.0",
         "traverse": "^0.6.6"
     },
     "repository": {
@@ -56,7 +56,9 @@
             "global-strict": 0,
             "guard-for-in": 2,
             "indent": [2, 4, { "SwitchCase": 1 }],
+            "jsx-quotes": 2,
             "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
+            "keyword-spacing": 2,
             "max-depth": 0,
             "max-len": [2, 120, 4, { "ignoreComments": true, "ignoreUrls": true }],
             "max-params": 0,
@@ -64,6 +66,7 @@
             "new-cap": [2, { "newIsCap": true, "capIsNew": false }],
             "no-bitwise": 2,
             "no-caller": 2,
+            "no-console": 2,
             "no-cond-assign": 0,
             "no-debugger": 0,
             "no-empty": 0,
@@ -84,10 +87,8 @@
             "padded-blocks": [2, "never"],
             "quotes": [2, "single"],
             "semi": [2, "always"],
-            "space-after-keywords": 2,
             "space-before-blocks": 2,
             "space-before-function-paren": 2,
-            "space-return-throw-case": 2,
             "spaced-comment": [2, "always", { "markers": ["global"] }],
             "strict": 0,
             "valid-jsdoc": 2,
@@ -95,10 +96,15 @@
         },
         "env": {
             "browser": true,
-            "node": true
+            "node": true,
+            "es6": true
         },
-        "ecmaFeatures": {
-            "templateStrings": true
+        "parserOptions": {
+            "ecmaVersion": 6,
+            "sourceType": "module",
+            "ecmaFeatures": {
+                "templateStrings": true
+            }
         }
     },
     "scripts": {
