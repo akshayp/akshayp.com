@@ -5,7 +5,7 @@
     "author": "Akshay Patel <akshayrpatel@gmail.com>",
     "private": true,
     "engines": {
-        "node": "6.x"
+        "node": "8.x"
     },
     "main": "index.js",
     "dependencies": {
@@ -37,10 +37,7 @@
         "url": "git://github.com/akshayp/akshayp.com.git"
     },
     "subdomain": "akshayp",
-    "domains": [
-        "akshayp.com",
-        "www.akshayp.com"
-    ],
+    "domains": ["akshayp.com", "www.akshayp.com"],
     "eslintConfig": {
         "rules": {
             "block-scoped-var": 2,
