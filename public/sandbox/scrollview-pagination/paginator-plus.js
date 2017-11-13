@@ -14,7 +14,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
     var BOUNDING_BOX = 'boundingBox';
     var CONTENT_BOX = 'contentBox';
 
-/**
+    /**
  * Scrollview plugin that adds support for paging
  *
  * @class ScrollViewPaginator
@@ -26,7 +26,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
         PaginatorPlugin.superclass.constructor.apply(this, arguments);
     }
 
-/**
+    /**
  * The identity of the plugin
  *
  * @property NAME
@@ -36,7 +36,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
  */
     PaginatorPlugin.NAME = 'pluginScrollViewPaginator';
 
-/**
+    /**
  * The namespace on which the plugin will reside
  *
  * @property NS
@@ -46,7 +46,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
  */
     PaginatorPlugin.NS = 'pages';
 
-/**
+    /**
  * The default attribute configuration for the plugin
  *
  * @property ATTRS
@@ -66,7 +66,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             value: null
         },
 
-    /**
+        /**
      * The active page number for a paged scrollview
      *
      * @attribute index
@@ -77,7 +77,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             value: 0
         },
 
-    /**
+        /**
      * The total number of pages
      *
      * @attribute total
@@ -88,7 +88,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             value: 0
         },
 
-		/**
+        /**
      * The total number of items per page
      *
      * @attribute numItemsPerPage
@@ -117,7 +117,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             self.after('indexChange', self._afterIndexChange);
         },
 
-    /**
+        /**
      * Calculate the page boundary offsets
      *
      * @method _calcOffsets
@@ -143,7 +143,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             offsets.push(size - bb.get((vert) ? 'offsetHeight' : 'offsetWidth'));
         },
 
-    /**
+        /**
      * Executed to respond to the flick event, by over-riding the default flickFrame animation.
      * This is needed to determine if the next or prev page should be activated.
      *
@@ -171,7 +171,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             return this._prevent;
         },
 
-    /**
+        /**
      * After host render handler
      *
      * @method _afterRender
@@ -183,7 +183,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             host.get('boundingBox').addClass(host.getClassName('paged'));
         },
 
-    /**
+        /**
      * scrollEnd handler detects if a page needs to change
      *
      * @method _scrollEnded
@@ -215,7 +215,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             host._flicking = false;
         },
 
-    /**
+        /**
      * index attr change handler
      *
      * @method _afterIndexChange
@@ -229,7 +229,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             }
         },
 
-    /**
+        /**
      * Update the UI based on the current page index
      *
      * @method _uiIndex
@@ -241,7 +241,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             this.scrollTo(index, 350, 'ease-out');
         },
 
-    /**
+        /**
      * Scroll to the next page in the scrollview, with animation
      *
      * @method next
@@ -254,7 +254,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             }
         },
 
-    /**
+        /**
      * Scroll to the previous page in the scrollview, with animation
      *
      * @method prev
@@ -267,7 +267,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             }
         },
 
-    /**
+        /**
      * Scroll to a given page in the scrollview, with animation.
      *
      * @method scrollTo
@@ -288,7 +288,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
             });
         },
 
-    /**
+        /**
      * Snaps the scrollview to the currently selected page
      *
      * @method snapToCurrent
@@ -313,7 +313,7 @@ YUI.add('scrollview-paginator-plus', function (Y) {
 
     });
 
-/**
+    /**
  * The default snap to current duration and easing values used on scroll end.
  *
  * @property SNAP_TO_CURRENT

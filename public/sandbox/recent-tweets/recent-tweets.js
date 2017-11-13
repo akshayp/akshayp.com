@@ -14,9 +14,9 @@ YUI.add('recent-tweets', function (Y) {
 
         _buildTweet: function (item) {
             var text = item.text
-                     .replace(/(http\S+)/i,'<a href="$1" target="_blank">$1</a>')
-                     .replace(/(@)([a-z0-9_\-]+)/i,'<a href="http://twitter.com/$2" target="_blank">$1$2</a>')
-                     .replace(/(#)(\S+)/ig,'<a href="http://search.twitter.com/search?q=%23$2" target="_blank">$1$2</a>');
+                .replace(/(http\S+)/i,'<a href="$1" target="_blank">$1</a>')
+                .replace(/(@)([a-z0-9_\-]+)/i,'<a href="http://twitter.com/$2" target="_blank">$1$2</a>')
+                .replace(/(#)(\S+)/ig,'<a href="http://search.twitter.com/search?q=%23$2" target="_blank">$1$2</a>');
             var template = this.TWEET_TEMPLATE;
             var markup = Y.substitute(template, { text: text });
 
