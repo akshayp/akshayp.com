@@ -1,6 +1,6 @@
 {
     "name": "akshayp.com",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "description": "Code powering http://akshayp.com",
     "author": "Akshay Patel <akshayrpatel@gmail.com>",
     "private": true,
@@ -12,7 +12,7 @@
         "combohandler": "0.4.x",
         "compression": "^1.4.0",
         "express": "^4.11.2",
-        "express-handlebars": "^2.0.0",
+        "express-handlebars": "^3.0.0",
         "moment": "^2.9.0",
         "poet": "2.x"
     },
