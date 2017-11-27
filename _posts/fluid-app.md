@@ -40,9 +40,11 @@ would, which sort of defeats the purpose of the SSB. It needs more frequent upda
 active plugin development system. The current plugins are pretty good, but it would be nice to implement something like
 Mozilla since this program is originally based from their Prism project.
 
-**Overall **: This a great piece of software if you are all about the web-apps. I wish it were supported on multiple
+**Overall**: This a great piece of software if you are all about the web-apps. I wish it were supported on multiple
 Operating systems as that would help manage web-apps better between,say Windows and Mac OS. The program is extremely
 easy to use and adds some color to my dock. Best of all the taskbar with multiple webapps running makes my life easier
-by instant access rather than having to open a browser. **Rating**: <span class="rating">★★★★</span>
+by instant access rather than having to open a browser.
+
+**Rating**: ★★★★
 
 Download Fluid @ [www.fluidapp.com](www.fluidapp.com)

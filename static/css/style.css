@@ -380,20 +380,20 @@ pre[class*='language-'] {
 
 /* Portfolio */
 
-.portfolio .post {
+.portfolio.post {
     padding: 0;
 }
 
-.portfolio .post ul {
+.portfolio.post ul {
     padding-left: 0;
 }
 
-.portfolio .post ul li {
+.portfolio.post ul li {
     margin: 5px;
     width: 32%;
 }
 
-.portfolio .post ul li a {
+.portfolio.post ul li a {
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 1px 1px #888;
@@ -401,21 +401,21 @@ pre[class*='language-'] {
     padding: 10px;
 }
 
-.portfolio .post ul li a:hover {
+.portfolio.post ul li a:hover {
     background: #222;
 }
 
-.portfolio .post ul li a:hover span {
+.portfolio.post ul li a:hover span {
     color: #eee;
 }
 
-.portfolio .post ul li img {
+.portfolio.post ul li img {
     height: auto;
     margin: 0;
     width: 100%;
 }
 
-.portfolio .post ul li span {
+.portfolio.post ul li span {
     color: #333;
     display: block;
 }
