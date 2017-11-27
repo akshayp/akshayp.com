@@ -1,11 +1,19 @@
-{{{"title" : "Make Terminal look good","link" : "/make-terminal-look-good/","category" : "Technology","id" : "1678","date" : "2011-09-17 05:32:55"}}}
-The IR theme is one of the cleanest themes out there for terminal. Grab it from Todd's detailed blog linked below. I also use some of the colors from the theme to pretty up the shell a bit and make it look like:
+---
+title: "Make Terminal look good"
+link: "/make-terminal-look-good/"
+category: "Technology"
+id: "1678"
+date: "2011-09-17 05:32:55"
+---
+
+The IR theme is one of the cleanest themes out there for terminal. Grab it from Todd's detailed blog linked below. I
+also use some of the colors from the theme to pretty up the shell a bit and make it look like:
 
 ![Terminal Window](/img/upload/fancy_iterm.png)
 
 **Put these settings in your .bashrc or .bash_profile**
 
-<code data-language="shell">
+```shell
 export COLOR_NC='\033[0m' # No Color
 export COLOR_WHITE='\033[1;37m'
 export COLOR_BLACK='\033[0;30m'
@@ -23,12 +31,12 @@ export COLOR_BROWN='\033[0;33m'
 export COLOR_YELLOW='\033[1;33m'
 export COLOR_GRAY='\033[1;30m'
 export COLOR_LIGHT_GRAY='\033[0;37m'
-</code>
+```
 
 **Specify your shell to display time and current folder with home abbreviated as ~**
 
-<code data-language="shell">
+```shell
 export PS1="[\[${COLOR_LIGHT_RED}\]\T\[${COLOR_NC}\]][ \[${COLOR_LIGHT_BLUE}\]\w \[${COLOR_NC}\]] \[${COLOR_PURPLE}\]&gt; \[${COLOR_NC}\]"
-</code>
+```
 
 [via Todd Werth](http://blog.toddwerth.com/entries/13)
