@@ -13,7 +13,7 @@ also use some of the colors from the theme to pretty up the shell a bit and make
 
 **Put these settings in your .bashrc or .bash_profile**
 
-```shell
+```bash
 export COLOR_NC='\033[0m' # No Color
 export COLOR_WHITE='\033[1;37m'
 export COLOR_BLACK='\033[0;30m'
@@ -35,7 +35,7 @@ export COLOR_LIGHT_GRAY='\033[0;37m'
 
 **Specify your shell to display time and current folder with home abbreviated as ~**
 
-```shell
+```bash
 export PS1="[\[${COLOR_LIGHT_RED}\]\T\[${COLOR_NC}\]][ \[${COLOR_LIGHT_BLUE}\]\w \[${COLOR_NC}\]] \[${COLOR_PURPLE}\]&gt; \[${COLOR_NC}\]"
 ```
 
