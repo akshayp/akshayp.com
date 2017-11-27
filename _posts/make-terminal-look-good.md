@@ -38,5 +38,3 @@ export COLOR_LIGHT_GRAY='\033[0;37m'
 ```bash
 export PS1="[\[${COLOR_LIGHT_RED}\]\T\[${COLOR_NC}\]][ \[${COLOR_LIGHT_BLUE}\]\w \[${COLOR_NC}\]] \[${COLOR_PURPLE}\]&gt; \[${COLOR_NC}\]"
 ```
-
-[via Todd Werth](http://blog.toddwerth.com/entries/13)

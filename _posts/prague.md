@@ -27,7 +27,7 @@ anything artistic in most modern art. I prefer the older art. I enjoy the amusem
 artist thinks he made and what the common mind percieves it as. There were some strange exhbits there inclduing a
 picture of a womans private parts, which I don't get has to do with anything the caption said. There were a few Picassos
 there that I liked, the rest of the art. Bizzare! Check out my photos on
-[Flickr](http://www.flickr.com/photos/akshayp/sets/72157625388304438/ "Prague Photos")
+[Flickr](https://www.flickr.com/photos/akshayp/sets/72157625388304438/ "Prague Photos")
 
 That was the end of my visit to the EB. As of now im stealing internet,sitting on the road,looing shady, trying to
 finish an art paper and writing this blog post.

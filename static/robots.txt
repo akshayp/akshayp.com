@@ -1,4 +1,4 @@
-Sitemap: http://www.akshayp.com/sitemap.xml
+Sitemap: https://www.akshayp.com/sitemap.xml
 User-agent: *
 Disallow: /GTS
 Disallow: /i

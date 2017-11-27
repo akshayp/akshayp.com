@@ -10,4 +10,4 @@ date: "2010-11-14 11:09:35"
 
 > 1. Writing the code is the easy part. Writing it so someone else can understand it later is the important part.
 > 2. Make it work, then make it elegant, then make it fast. <cite>Via
->    [The Fishbowl](http://fishbowl.pastiche.org/2007/04/15/the_two_things_about_computer_programming/)</cite>
+>    [The Fishbowl](https://fishbowl.pastiche.org/2007/04/15/the_two_things_about_computer_programming/)</cite>

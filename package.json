@@ -1,7 +1,7 @@
 {
     "name": "akshayp.com",
     "version": "0.0.18",
-    "description": "Code powering http://akshayp.com",
+    "description": "Code powering https://akshayp.com",
     "author": "Akshay Patel <akshayrpatel@gmail.com>",
     "private": true,
     "engines": {

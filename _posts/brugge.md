@@ -29,4 +29,4 @@ the city as such, it just a chill relaxing environment. Here are some of the thi
   cherish all my life. That's it for now. We are off to England now via the chunnel . That is one thing I am definitely
   excited about. A bus that gets on to a train under the ocean for transportation. Wohoo. England here I come!
 
-Oh here are the pictures from Brugge: [Flickr](http://www.flickr.com/photos/akshayp/sets/72157625389394104/)
+Oh here are the pictures from Brugge: [Flickr](https://www.flickr.com/photos/akshayp/sets/72157625389394104/)

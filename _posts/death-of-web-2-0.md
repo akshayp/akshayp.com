@@ -27,7 +27,7 @@ From recent history, it has played crucial roles in the US Elections, Iran Elect
 death of Michael Jackson. Web 2.0 lacked this functionality. It is not just about community driven websites, a lot of it
 has to do with the contribution of individual users and how they want to control what they see.I found an interesting
 quote online about real time search via
-[<cite style="font-style: normal;">inchoo.net</cite>](http://inchoo.net "Inchoo.net")
+[<cite style="font-style: normal;">inchoo.net</cite>](https://inchoo.net "Inchoo.net")
 
 [![Real Time Search](/img/upload/real-time-search.jpg "Real Time Search")](/img/upload/real-time-search.jpg)
 
@@ -45,13 +45,13 @@ right technological decisions.
 
 Opening up API's, letting users mash-up content from their existing user base with another service with not only
 generate revenue for both the parties but will result in an overall pleasurable experience for the user which is what it
-comes down to at the end of the day. [Twitter](http://www.twitter.com "Twiiter"),
-[Foursquare](http://www.foursquare.com "Forsquare") , [Facebook](http://www.facebook.com), [Last.fm](http://www.last.fm)
-etc.. are not just the childish social networks you think they are. They have an enormous user-base who generate an
-enormous amount of data that could be used from tons of stuff like marketing to recommendation engines to discovering
-new music. I think these guys have taken the right step. It's a matter of making it more appealing to the average
-person. Soon enough, with a better business model and wider mobile accessibility I think these websites will define the
-future of the interwebs. I will leave it at that.
+comes down to at the end of the day. [Twitter](https://www.twitter.com "Twiiter"),
+[Foursquare](https://www.foursquare.com "Forsquare") , [Facebook](https://www.facebook.com),
+[Last.fm](https://www.last.fm) etc.. are not just the childish social networks you think they are. They have an enormous
+user-base who generate an enormous amount of data that could be used from tons of stuff like marketing to recommendation
+engines to discovering new music. I think these guys have taken the right step. It's a matter of making it more
+appealing to the average person. Soon enough, with a better business model and wider mobile accessibility I think these
+websites will define the future of the interwebs. I will leave it at that.
 
 Please leave comments and let me know what you think about Web 3.0? What do you think it is going to be? Is it going to
 rock your world?

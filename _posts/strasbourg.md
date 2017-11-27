@@ -17,4 +17,4 @@ classic Cuban sandwich. It was absolutely incredible. I ended the day by watchin
 and our gracious driver Max who bought us drinks every-time Turkey scored a goal. That sums up all I did in Strasbourg.
 No wild partying. It was a welcome, quiet and relaxing 3 days for me
 
-Flickr photos are available [here](http://www.flickr.com/photos/akshayp/sets/72157625260794173/)
+Flickr photos are available [here](https://www.flickr.com/photos/akshayp/sets/72157625260794173/)

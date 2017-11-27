@@ -13,8 +13,8 @@ places you are visiting are laid out. Not only that you can approximately draw a
 reference of how far these distances are on the
 map.[![Europe](/img/upload/europe-300x258.gif "Europe")](/img/upload/europe.gif)
 
-One thing I would like to see them incorporate is some kind of a Trip Planner like [TripIt](http://www.tripit.com). Only
-downside to that is the user would have to let Google access their trip data which i suppose many people don't mind
+One thing I would like to see them incorporate is some kind of a Trip Planner like [TripIt](https://www.tripit.com).
+Only downside to that is the user would have to let Google access their trip data which i suppose many people don't mind
 since TripIt uses the same technique. Keeping in mind the powerful ADsense Google has, suggestions about these places on
 one's 'Trip' could be shown making it a very powerful user-oriented Web 2.0 app.
 

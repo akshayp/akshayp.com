@@ -19,7 +19,7 @@ Our first day was spent going to a service at Notre Dame. At this point I was ab
 seemed too redundant too me.It was the music that got me this time. The choir was absolutely incredible and being in the
 cathedral with so many people chanting is definitely something people visiting Paris should definitely do . On a side
 note, check this rendering of Notre Dame
-[http://www.ted.com/index.php/talks/blaise_aguera_y_arcas_demos_photosynth.html](http://www.ted.com/index.php/talks/blaise_aguera_y_arcas_demos_photosynth.html)
+[https://www.ted.com/index.php/talks/blaise_aguera_y_arcas_demos_photosynth.html](https://www.ted.com/index.php/talks/blaise_aguera_y_arcas_demos_photosynth.html)
 
 <!--more-->
 
@@ -49,4 +49,4 @@ tour.
 
 Au revoir for now, I'm losing my stolen wi-fi connection from the park here.. Seems to be a trend with my blog posts:)
 
-Check out more photos on [Flickr](http://www.flickr.com/photos/akshayp/sets/72157625406003163/)
+Check out more photos on [Flickr](https://www.flickr.com/photos/akshayp/sets/72157625406003163/)

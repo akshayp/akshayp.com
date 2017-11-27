@@ -26,7 +26,7 @@ class Template extends React.Component {
                     <link
                         rel="index"
                         title="Unstructured Scribbles | Something about Everything"
-                        href="http://www.akshayp.com"
+                        href="https://www.akshayp.com"
                     />
                     <link rel="shortcut icon" href={__PATH_PREFIX__ + '/favicon.png'} />
                     <link rel="stylesheet" href={__PATH_PREFIX__ + '/css/vendor.css'} type="text/css" />

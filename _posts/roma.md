@@ -46,4 +46,4 @@ Ancient Rome:
 * Spanish Steps
 * Tribute Fountain
 
-Photos on Flickr are available [here](http://www.flickr.com/photos/akshayp/sets/72157625268406183/)
+Photos on Flickr are available [here](https://www.flickr.com/photos/akshayp/sets/72157625268406183/)

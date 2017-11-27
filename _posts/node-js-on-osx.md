@@ -7,12 +7,12 @@ date: "2010-11-12
 11:24:54"
 ---
 
-[Node.js](http://nodejs.org/) is a fun new technology. If you are looking to experiment with it, here is a quick start
+[Node.js](https://nodejs.org/) is a fun new technology. If you are looking to experiment with it, here is a quick start
 guide on how to install it for people using OSX
 
 **Macports is so 1995**
 
-Install [Homebrew](http://mxcl.github.com/homebrew/ "Homebrew Guide"), a much better alternative to macports
+Install [Homebrew](https://brew.sh/ "Homebrew Guide"), a much better alternative to macports
 
 ```bash
 ruby -e "$(curl -fsSL https://gist.github.com/raw/323731/install_homebrew.rb)"
@@ -21,7 +21,7 @@ ruby -e "$(curl -fsSL https://gist.github.com/raw/323731/install_homebrew.rb)"
 **Install Node.js and NPM**
 
 [npm](https://github.com/isaacs/npm "npm") (Node Package Manager) is a nifty little tool to manage node
-[packages](http://npm.mape.me/ "Node Package Repo")
+[packages](https://npmjs.com/ "Node Package Repo")
 
 ```bash
 brew install node

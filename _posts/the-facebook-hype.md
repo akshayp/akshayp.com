@@ -15,4 +15,4 @@ below for a well argued opinion.
 > the same order.
 >
 > <cite>Douglas Rushkoff</cite> >
-> [via CNN](http://www.cnn.com/2011/OPINION/01/07/rushkoff.facebook.myspace/index.html?hpt=C2)
+> [via CNN](https://www.cnn.com/2011/OPINION/01/07/rushkoff.facebook.myspace/index.html?hpt=C2)

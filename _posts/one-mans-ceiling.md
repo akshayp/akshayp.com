@@ -13,4 +13,4 @@ Excellent Article!
 > lingering in the mind and quietly demanding reengagement. Good enough is not good enough, unless we want our web
 > products to sit on the cyber-shelf, gathering digital dust.<cite>Jeffrey Zeldman</cite>
 
-[via Cognition](http://cognition.happycog.com/article/one-mans-ceiling)
+[via Cognition](https://cognition.happycog.com/article/one-mans-ceiling)

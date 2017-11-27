@@ -30,4 +30,4 @@ the Germans in the eurocup. I also managed to delay the entire group of 50 peopl
 documents back from the embassy with my approval to go to England :D
 
 That's it for now. A long trip lies ahead of me... Goodbye Germany. Flickr photos uploaded
-[here](http://www.flickr.com/photos/akshayp/sets/72157625405706301/)
+[here](https://www.flickr.com/photos/akshayp/sets/72157625405706301/)

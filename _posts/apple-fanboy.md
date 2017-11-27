@@ -6,6 +6,6 @@ id: "909"
 date: "2010-02-28 01:03:21"
 ---
 
-![Fruit Salad](http://iniwoo.net/wp-content/uploads/2009/03/photography-inspiration-retro-apple-logo-fruit-salad.jpg)
+![Fruit Salad](https://iniwoo.net/wp-content/uploads/2009/03/photography-inspiration-retro-apple-logo-fruit-salad.jpg)
 
 [via iniwoo.net](iniwoo.net)

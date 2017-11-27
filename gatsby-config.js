@@ -3,7 +3,7 @@ module.exports = {
         title: 'Unstructured Scribbles | Something about Everything',
         author: 'Akshay Patel',
         description: '',
-        siteUrl: 'http://akshayp.com/'
+        siteUrl: 'https://akshayp.com/'
     },
     pathPrefix: '/',
     plugins: [

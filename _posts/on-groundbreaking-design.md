@@ -11,4 +11,4 @@ date: "2011-01-30 01:19:22"
 >
 > <cite>John Kolko</cite>
 
-[via Fast Code Design](http://www.fastcodesign.com/1663079/when-looking-to-invent-being-objective-can-cripple-your-process)
+[via Fast Code Design](https://www.fastcodesign.com/1663079/when-looking-to-invent-being-objective-can-cripple-your-process)

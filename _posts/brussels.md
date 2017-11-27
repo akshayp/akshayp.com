@@ -27,5 +27,5 @@ like an Indian beach honestly. Not the cleanest beach I've seen. It was fun thro
 using internet at a cafe to write this post. The next city is the last from this wonderful trip. I have great
 expectations for Brugge.
 
-Check out the Photos on Flickr [Brussels](http://www.flickr.com/photos/akshayp/sets/72157625389278402/) &amp;
-[Ghent](http://www.flickr.com/photos/akshayp/sets/72157625389133542/)
+Check out the Photos on Flickr [Brussels](https://www.flickr.com/photos/akshayp/sets/72157625389278402/) &amp;
+[Ghent](https://www.flickr.com/photos/akshayp/sets/72157625389133542/)

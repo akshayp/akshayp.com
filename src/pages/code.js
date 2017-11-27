@@ -27,7 +27,7 @@ class Code extends React.Component {
                     </li>
                 </ul>
                 <h4>
-                    <a href="http://github.com/akshayp/assembly">Assembly</a>
+                    <a href="https://github.com/akshayp/assembly">Assembly</a>
                 </h4>
                 <ul>
                     <li>Parity Checker</li>
@@ -36,7 +36,7 @@ class Code extends React.Component {
                     <li>Background Finder</li>
                 </ul>
                 <h4>
-                    <a href="http://github.com/akshayp/cplusplus">C/C++</a>
+                    <a href="https://github.com/akshayp/cplusplus">C/C++</a>
                 </h4>
                 <ul>
                     <li>Parity Checker</li>
@@ -46,7 +46,7 @@ class Code extends React.Component {
                     <li>Matlab in C++</li>
                 </ul>
                 <h4>
-                    <a href="http://github.com/akshayp/vhdl">VHDL</a>
+                    <a href="https://github.com/akshayp/vhdl">VHDL</a>
                 </h4>
                 <ul>
                     <li>

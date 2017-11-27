@@ -12,4 +12,4 @@ date: "2011-03-09 05:04:18"
 > intuition over abstract logic, perceptiveness over I.Q. It allows us to tell a different sort of success story, an
 > inner story to go along with the conventional surface one
 
-[via The NewYorker](http://www.newyorker.com/reporting/2011/01/17/110117fa_fact_brooks?currentPage=all)
+[via The NewYorker](https://www.newyorker.com/reporting/2011/01/17/110117fa_fact_brooks?currentPage=all)

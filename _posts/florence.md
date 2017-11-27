@@ -13,7 +13,7 @@ the past few days. Everything in the city seems to be related to the Medici fami
 Florence during the Renaissance which is when Florence became known as a financial center. Since I'm on tour with some
 newly made friends and I do a lot of touristy things, I'm going to list stuff I did and what I thought was interesting
 for all my future posts. You can always check out pictures for these cities on
-[Flickr](http://www.flickr.com/photos/akshayp/collections/72157625388707246/)
+[Flickr](https://www.flickr.com/photos/akshayp/collections/72157625388707246/)
 
 List Of Places I Visited in Florence:
 

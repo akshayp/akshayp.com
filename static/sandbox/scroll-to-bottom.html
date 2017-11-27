@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Scroll to Bottom Beacon</title>
 	<meta name="author" content="Akshay Patel">
-	<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+	<script src="https://yui-s.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
 	<style type="text/css">
 		p {
 			margin: 10px 0;
@@ -81,7 +81,7 @@
 					doc 				   = Y.one(document),
 					isViewable     = false,
 					isAlreadyShown = false;
-			
+
 			// Scrolling Handler
 			Y.one(window).on('scroll', function(){
 				isViewable = triggerNode.inViewportRegion();
@@ -90,7 +90,7 @@
 					var topValue = Y.DOM.winHeight() - 200;
 					scroller.setStyles({
 						"top": topValue
-					});	
+					});
 					scroller.transition({
 						easing: 'ease-out',
 						duration: 0.3,
@@ -98,7 +98,7 @@
 					});
 				}
 			});
-			
+
 			// Close Button handler
 			Y.one('.close').on('click',function(e){
 				e.preventDefault();
@@ -108,7 +108,7 @@
 					right: '-200px'
 				});
 			});
-		}		
+		}
 	});
 </script>
 </body>
