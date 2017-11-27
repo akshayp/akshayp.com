@@ -7,183 +7,48 @@
     "engines": {
         "node": "8.x"
     },
-    "main": "index.js",
+    "main": "",
+    "scripts": {
+        "dev": "gatsby develop",
+        "lint": "eslint --fix .",
+        "build": "gatsby build",
+        "clean": "rm -rf ./.cache",
+        "test": "npm run lint",
+        "release": "npm run test && git push"
+    },
     "dependencies": {
-        "combohandler": "0.4.x",
-        "compression": "^1.7.1",
-        "express": "^4.16.2",
-        "express-handlebars": "^3.0.0",
-        "moment": "^2.19.2",
-        "poet": "2.x"
+        "gatsby": "^1.9.118",
+        "gatsby-link": "^1.6.28",
+        "gatsby-plugin-google-analytics": "^1.0.12",
+        "gatsby-plugin-offline": "^1.0.10",
+        "gatsby-plugin-react-helmet": "^1.0.8",
+        "gatsby-plugin-sitemap": "^1.2.5",
+        "gatsby-remark-copy-linked-files": "^1.5.21",
+        "gatsby-remark-prismjs": "^1.2.9",
+        "gatsby-source-filesystem": "^1.5.8",
+        "gatsby-transformer-remark": "^1.7.21",
+        "lodash": "^4.17.4"
     },
     "devDependencies": {
-        "chai": "^4.1.2",
-        "coveralls": "^3.0.0",
-        "eslint": "^4.11.0",
-        "grunt": "^1.0.0",
-        "grunt-bump": "^0.8.0",
-        "grunt-cli": "^1.2.0",
-        "grunt-contrib-concat": "^1.0.1",
-        "grunt-contrib-uglify": "^3.1.0",
-        "istanbul": "^0.4.0",
-        "mocha": "^4.0.1",
-        "request": "^2.83.0",
-        "supertest": "^3.0.0",
-        "traverse": "^0.6.6"
+        "@akshayp/eslint-config": "^1.0.0",
+        "babel-eslint": "^8.0.2",
+        "eslint": "^4.12.0",
+        "eslint-plugin-babel": "^4.1.2",
+        "eslint-plugin-flowtype": "^2.39.1",
+        "eslint-plugin-prettier": "^2.3.1",
+        "eslint-plugin-react": "^7.5.1",
+        "prettier": "^1.8.2"
     },
     "repository": {
         "type": "git",
         "url": "git://github.com/akshayp/akshayp.com.git"
     },
     "subdomain": "akshayp",
-    "domains": [
-        "akshayp.com",
-        "www.akshayp.com"
-    ],
+    "domains": ["akshayp.com", "www.akshayp.com"],
     "eslintConfig": {
-        "rules": {
-            "block-scoped-var": 2,
-            "brace-style": 2,
-            "camelcase": [
-                2,
-                {
-                    "properties": "never"
-                }
-            ],
-            "comma-dangle": [
-                2,
-                "never"
-            ],
-            "comma-style": 2,
-            "complexity": 0,
-            "consistent-this": [
-                2,
-                "self"
-            ],
-            "curly": [
-                2,
-                "all"
-            ],
-            "dot-notation": [
-                2,
-                {
-                    "allowKeywords": true
-                }
-            ],
-            "eqeqeq": 2,
-            "global-strict": 0,
-            "guard-for-in": 2,
-            "indent": [
-                2,
-                4,
-                {
-                    "SwitchCase": 1
-                }
-            ],
-            "jsx-quotes": 2,
-            "key-spacing": [
-                2,
-                {
-                    "beforeColon": false,
-                    "afterColon": true
-                }
-            ],
-            "keyword-spacing": 2,
-            "max-depth": 0,
-            "max-len": [
-                2,
-                120,
-                4,
-                {
-                    "ignoreComments": true,
-                    "ignoreUrls": true
-                }
-            ],
-            "max-params": 0,
-            "max-statements": 0,
-            "new-cap": [
-                2,
-                {
-                    "newIsCap": true,
-                    "capIsNew": false
-                }
-            ],
-            "no-bitwise": 2,
-            "no-caller": 2,
-            "no-console": 2,
-            "no-cond-assign": 0,
-            "no-debugger": 0,
-            "no-empty": 0,
-            "no-eval": 0,
-            "no-iterator": 0,
-            "no-loop-func": 0,
-            "no-mixed-spaces-and-tabs": 2,
-            "no-multi-str": 0,
-            "no-new": 0,
-            "no-plusplus": 0,
-            "no-proto": 0,
-            "no-script-url": 0,
-            "no-shadow": 0,
-            "no-trailing-spaces": 0,
-            "no-undef": 2,
-            "no-unused-vars": [
-                2,
-                {
-                    "vars": "all",
-                    "args": "none"
-                }
-            ],
-            "no-use-before-define": [
-                2,
-                "nofunc"
-            ],
-            "padded-blocks": [
-                2,
-                "never"
-            ],
-            "quotes": [
-                2,
-                "single"
-            ],
-            "semi": [
-                2,
-                "always"
-            ],
-            "space-before-blocks": 2,
-            "space-before-function-paren": 2,
-            "spaced-comment": [
-                2,
-                "always",
-                {
-                    "markers": [
-                        "global"
-                    ]
-                }
-            ],
-            "strict": 0,
-            "valid-jsdoc": 2,
-            "wrap-iife": [
-                2,
-                "inside"
-            ]
+        "globals": {
+            "graphql": true
         },
-        "env": {
-            "browser": true,
-            "node": true,
-            "es6": true
-        },
-        "parserOptions": {
-            "ecmaVersion": 6,
-            "sourceType": "module",
-            "ecmaFeatures": {
-                "templateStrings": true
-            }
-        }
-    },
-    "scripts": {
-        "start": "node index.js",
-        "lint": "eslint --fix .",
-        "test": "istanbul cover --dir artifacts -- _mocha test --reporter spec",
-        "release": "npm run lint && npm run test && grunt bump:patch"
+        "extends": "@akshayp"
     }
 }
