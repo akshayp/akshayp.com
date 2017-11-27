@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>YUI3 - Spinner.js</title>
+	<link rel="shortcut icon" href="http://www.akshayp.com/wp-content/themes/scribbles/favicon.ico">
+	<link rel="stylesheet" href="../../css/style.css" type="text/css" media="all">
+	<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+	<script src="spinner.js"></script>
+	<style>
+		#spinner {
+			height: 20px;
+			width: 20px;
+			top: 10px;
+			margin: 20px auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="doc" class="yui3-g">
+		<div id="bd" class="yui3-u">
+			<div class="post">
+				<h2>Spinner Widget</h2>
+				<p>This is a Spinner made with CSS3 Animations and JS. It does not use any Images and is wrapped up in a YUI3 widget. At this time it doesn't support browsers that cannot do CSS3 animations. I will add this in a future version</p>
+				
+				<h4>Demo</h4>
+				<div id="spinner"></div>
+				<h4>How To</h4>
+				<pre class="prettyprint lang-html linenums">&lt;div id="spinner"&gt;&lt;/div&gt;</pre>
+				<pre class="prettyprint lang-bash linenums">
+&lt;script&gt;
+YUI().use('spinner', function (Y) {
+  var spinner = new Y.Spinner({srcNode: "#spinner"});
+  spinner.render();
+});
+&lt;/script&gt;
+				</pre>
+				<script>
+					YUI().use('spinner', function (Y) {
+			    	var spinner = new Y.Spinner({srcNode: "#spinner"});
+						spinner.render();
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+	<script src="../../js/site.js"></script>
+</body>
+</html>

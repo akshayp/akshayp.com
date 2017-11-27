@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Recent Tweets (YUI3)</title>
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.9.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+   <link rel="stylesheet" type="text/css" href="base.css">
+   <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+   <script src="recent-tweets.js"></script>
+</head>
+<body>
+<div id="doc" class="yui-t7">
+	<div id="hd">
+		<h1>Recent Tweets (YUI3)</h1>
+	</div>
+	<div id="bd">
+		<div class="yui-g">
+			<noscript>To use this plugin you need to enable JS. I promise JS is not dangerous. I realize you think you are being secure by disabling it, stop being so damn paranoid and turn it back on. It's 2010, if you want to disable js then you might as well stop using the internet</noscript>
+			<div id="tweet-list" class="mod"></div>
+			<div id="tweets-yahoo-sports" class="mod"></div>
+		</div>
+	</div>
+   <div id="ft">Copyright &copy; Akshay Patel</div>
+</div>
+<script type="text/javascript" charset="utf-8">
+YUI().use('recent-tweets', function(Y) {
+	var tweets = new Y.RecentTweets({ srcNode: '#tweet-list' });
+	tweets.render();
+	var sportsTweets = new Y.RecentTweets({
+		srcNode: '#tweets-yahoo-sports',
+		username: "YahooSports",
+		numTweets: 8,
+		strings: {
+			loaderText : "Loading Tweets...",
+			headingText : "Latest from Yahoo! Sports"
+		}
+	});
+	sportsTweets.render();
+});
+</script>
+</body>
+</html>
