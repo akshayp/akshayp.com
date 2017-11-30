@@ -11,7 +11,7 @@ class Portfolio extends React.Component {
                     {portfolio.map(site => {
                         return (
                             <li className="pure-u-1-3" key={site.url}>
-                                <a href={site.url} target="_blank">
+                                <a href={site.url} target="noopener">
                                     <img src={`/img/${site.key}.jpg`} alt={site.company} />
                                     <span>{site.description}</span>
                                 </a>

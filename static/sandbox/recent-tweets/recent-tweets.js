@@ -20,11 +20,11 @@ YUI.add(
 
                 _buildTweet: function(item) {
                     const text = item.text
-                        .replace(/(http\S+)/i, '<a href="$1" target="_blank">$1</a>')
-                        .replace(/(@)([a-z0-9_\-]+)/i, '<a href="https://twitter.com/$2" target="_blank">$1$2</a>')
+                        .replace(/(http\S+)/i, '<a href="$1" target="noopener">$1</a>')
+                        .replace(/(@)([a-z0-9_\-]+)/i, '<a href="https://twitter.com/$2" target="noopener">$1$2</a>')
                         .replace(
                             /(#)(\S+)/gi,
-                            '<a href="https://search.twitter.com/search?q=%23$2" target="_blank">$1$2</a>'
+                            '<a href="https://search.twitter.com/search?q=%23$2" target="noopener">$1$2</a>'
                         );
                     const template = this.TWEET_TEMPLATE;
                     const markup = Y.substitute(template, { text: text });
