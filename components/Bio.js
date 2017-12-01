@@ -10,7 +10,7 @@ class Bio extends React.Component {
     render() {
         return (
             <div className="about">
-                <img src="/img/profile.png" alt="Akshay Patel" />
+                <img src="/img/profile.jpg" alt="Akshay Patel" />
                 <p>
                     My name is Akshay Patel. I lead an engineering team working on building an exciting new product in
                     the Sports and Technology space.

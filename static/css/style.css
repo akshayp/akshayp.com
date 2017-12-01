@@ -223,7 +223,7 @@ blockquote p {
 .post iframe {
     border: none;
     display: block;
-    margin: 0 auto 10px;
+    margin: 20px auto 10px;
     max-width: 100%;
 }
 
@@ -418,15 +418,6 @@ pre[class*='language-'] {
 .portfolio.post ul li span {
     color: #333;
     display: block;
-}
-
-/* Retina */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (min--moz-device-pixel-ratio: 1.5),
-    only screen and (min-device-pixel-ratio: 1.5) {
-    #doc {
-        background: transparent url(/img/bg@2x.png) repeat;
-    }
 }
 
 /* Smartphone */
