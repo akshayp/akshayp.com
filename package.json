@@ -19,7 +19,7 @@
     "dependencies": {
         "gatsby": "^1.9.118",
         "gatsby-link": "^1.6.28",
-        "gatsby-plugin-google-analytics": "^1.0.12",
+        "gatsby-plugin-manifest": "^1.0.9",
         "gatsby-plugin-offline": "^1.0.10",
         "gatsby-plugin-react-helmet": "^1.0.8",
         "gatsby-plugin-sitemap": "^1.2.5",
@@ -44,7 +44,10 @@
         "url": "git://github.com/akshayp/akshayp.com.git"
     },
     "subdomain": "akshayp",
-    "domains": ["akshayp.com", "www.akshayp.com"],
+    "domains": [
+        "akshayp.com",
+        "www.akshayp.com"
+    ],
     "eslintConfig": {
         "globals": {
             "graphql": true

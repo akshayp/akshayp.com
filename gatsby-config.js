@@ -21,9 +21,21 @@ module.exports = {
             }
         },
         {
-            resolve: `gatsby-plugin-google-analytics`,
+            resolve: `gatsby-plugin-manifest`,
             options: {
-                // trackingId: `ADD YOUR TRACKING ID HERE`,
+                name: 'Unstructured Scribbles',
+                short_name: 'Scribbles',
+                start_url: '/',
+                background_color: '#f7f0eb',
+                theme_color: '#EFEFEF',
+                display: 'minimal-ui',
+                icons: [
+                    {
+                        src: `/img/logo-512x512.png`,
+                        sizes: `512x512`,
+                        type: `image/png`
+                    }
+                ]
             }
         },
         `gatsby-plugin-offline`,
