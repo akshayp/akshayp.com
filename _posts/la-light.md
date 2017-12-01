@@ -7,6 +7,9 @@ date: "2011-08-05
 15:30:50"
 ---
 
-<iframe src="https://player.vimeo.com/video/27235856" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+[![LA Light](https://i.vimeocdn.com/video/328787856_540x270.jpg)](https://vimeo.com/27235856)
 
-[ via Colin Rich on Vimeo](https://vimeo.com/deerdog)
+> I sought out to capture the electric radiance of Los Angeles at night and paint a portrait of my city. It took me 6
+> months of on and off shooting to finish this project. Shooting time lapses is a labor of love and a study in patience.
+
+[via Colin Rich on Vimeo](https://vimeo.com/deerdog)

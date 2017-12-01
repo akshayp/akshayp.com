@@ -9,7 +9,7 @@ class Post extends React.Component {
         const post = this.props.post || this.props.data.markdownRemark;
         const isStandalone = !!this.props.data;
         const { title, date, link } = post.frontmatter;
-        const postDate = new Date(date);
+        const postDate = new Date(date.replace(' ', 'T'));
         const month = monthFormatter.format(postDate);
 
         return (

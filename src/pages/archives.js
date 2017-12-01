@@ -14,7 +14,7 @@ class Archives extends React.Component {
                 <ul>
                     {posts.map(({ node }) => {
                         const { title, date, link } = node.frontmatter;
-                        const postDate = new Date(date);
+                        const postDate = new Date(date.replace(' ', 'T'));
                         const month = monthFormatter.format(postDate);
 
                         return (
