@@ -7,7 +7,7 @@ class Nav extends React.Component {
         return (
             <ul>
                 {navItems.map(item => {
-                    const className = item.url === current ? 'pure-menu-selected' : '';
+                    const className = item.url === current ? 'menu-selected' : '';
                     return (
                         <li key={item.url} className={className}>
                             <a href={item.url}>{item.description}</a>

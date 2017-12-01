@@ -1,3 +1,237 @@
+/* Reset */
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+figcaption,
+figure,
+main {
+    display: block;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: inherit;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+audio,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+img {
+    border-style: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type='checkbox'],
+[type='radio'] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type='search'] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details,
+menu {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+canvas {
+    display: inline-block;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
 /* Base Styles */
 body {
     color: #4d4d4d;
@@ -6,20 +240,36 @@ body {
     font-weight: 400;
 }
 
-body,
-.pure-g [class *= 'pure-u'] {
+body {
     font-family: 'proxima-nova', 'Helvetica Neue', 'Helvetica', sans-serif;
-}
-
-#menu,
-.pure-menu-link {
-    transition: all 0.2s ease-out;
 }
 
 #doc {
     background: transparent url(/img/bg.png) repeat;
     padding-left: 252px;
     left: 0;
+    letter-spacing: -0.31em;
+    text-rendering: optimizespeed;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.grid-u,
+.grid-33,
+.grid-100 {
+    display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.grid-100 {
+    width: 100%;
+}
+
+.grid-33 {
+    width: 33.3333%;
 }
 
 #menu {
@@ -116,36 +366,54 @@ blockquote p {
 }
 
 /* Navigation */
-#menu a {
-    border: none;
-    white-space: normal;
+.menu,
+.hamburger {
+    transition: all 0.2s ease-out;
 }
 
-#menu li a {
-    padding: 0.6em 0 0.6em 0.6em;
+.menu.menu-open {
+    visibility: visible;
+    z-index: 2;
+    width: 100%;
 }
 
-#menu .pure-menu-open,
-#menu .pure-menu ul {
-    background: transparent;
-    border: none;
-}
-
-#menu .pure-menu ul {
+.menu ul {
     border-top: 1px solid #333;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 1;
+    visibility: visible;
+    position: relative;
 }
 
-#menu .pure-menu li a:hover,
-#menu .pure-menu li a:focus {
+.menu-open > ul:focus {
+    outline: 0;
+}
+
+.menu a {
+    color: #777;
+    white-space: normal;
+    display: block;
+    color: inherit;
+    line-height: 1.5em;
+    padding: 0.6em 0 0.6em 0.6em;
+    text-decoration: none;
+}
+
+.menu li a:hover,
+.menu li a:focus {
     background: #333;
 }
 
-.pure-menu-link,
-#menu .pure-menu-heading {
+.hamburger,
+.menu-heading {
     background: transparent url(/img/bolt.png) no-repeat left center;
 }
 
-.pure-menu-link {
+.hamburger {
     display: none;
     top: 0;
     left: 150px;
@@ -156,33 +424,34 @@ blockquote p {
     width: 100%;
 }
 
-#menu .pure-menu-heading {
+.menu .menu-heading {
     background-size: 25%;
     font-size: 20px;
     margin: 5px 0;
     color: #fff;
     padding: 0 8px;
     text-align: right;
+    text-transform: uppercase;
     font-family: 'Futura';
 }
 
-#menu .pure-menu-heading:hover,
-#menu .pure-menu-heading:focus {
-    -webkit-filter: blur(1px);
+.menu-heading:hover,
+.menu-heading:focus {
+    filter: blur(1px);
 }
 
-#menu .pure-menu-selected {
+.menu-selected {
     background: #3753c8;
 }
 
-#menu .social a:hover,
-#menu .pure-menu-selected a {
+.social a:hover,
+.menu-selected a {
     transition: all 0.2s ease-out;
     color: #fff;
 }
 
-#menu li.pure-menu-selected a:hover,
-#menu li.pure-menu-selected a:focus {
+li.menu-selected a:hover,
+li.menu-selected a:focus {
     background: none;
 }
 
@@ -453,18 +722,19 @@ pre[class*='language-'] {
         left: 0;
     }
 
-    .pure-menu-link {
+    .hamburger {
+        background-size: 50px;
         position: fixed;
         left: 0;
         display: block;
     }
 
-    #doc.active .pure-menu-link {
+    #doc.active .hamburger {
         left: 252px;
     }
 
     /* Misc */
-    #menu .pure-menu-heading {
+    .menu-heading {
         background: none;
     }
 

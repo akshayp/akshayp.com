@@ -1,5 +1,5 @@
 Code powering my personal blog hosted at [akshayp.com](https://akshayp.com) powered by [Gatsby](https://gatsbyjs.org),
-[React](https://reactjs.org) and [Pure CSS](https://purecss.io)
+[React](https://reactjs.org)
 
 ## Build
 

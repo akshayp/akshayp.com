@@ -15,7 +15,7 @@ class Template extends React.Component {
         const active = this.state.active ? 'active' : '';
 
         return (
-            <div id="doc" className={`pure-g ${active}`}>
+            <div id="doc" className={`${active}`}>
                 <Helmet>
                     <title>Unstructured Scribbles | Something about Everything</title>
                     <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -30,12 +30,11 @@ class Template extends React.Component {
                         href="https://www.akshayp.com"
                     />
                     <link rel="shortcut icon" href={__PATH_PREFIX__ + '/favicon.png'} />
-                    <link rel="stylesheet" href={__PATH_PREFIX__ + '/css/vendor.css'} type="text/css" />
                     <link rel="stylesheet" href={__PATH_PREFIX__ + '/css/style.css'} type="text/css" />
                 </Helmet>
                 <a
                     href="#menu"
-                    className={`pure-menu-link ${active}`}
+                    className={`hamburger ${active}`}
                     onClick={e => {
                         e.preventDefault();
                         this.setState({ active: !this.state.active });
@@ -49,21 +48,19 @@ class Template extends React.Component {
                         alt="Menu toggle"
                     />
                 </a>
-                <div id="menu" className="pure-u">
-                    <div className="pure-menu pure-menu-open">
-                        <h1>
-                            <a href="/" className="pure-menu-heading">
-                                Unstructured Scribbles
-                            </a>
-                        </h1>
-                        <Nav current={location.pathname} />
-                        <Bio />
-                    </div>
+                <div id="menu" className="grid-u menu menu-open">
+                    <h1>
+                        <a href="/" className="menu-heading">
+                            Unstructured Scribbles
+                        </a>
+                    </h1>
+                    <Nav current={location.pathname} />
+                    <Bio />
                 </div>
-                <div id="main" className="pure-u">
+                <div id="main" className="grid-u">
                     {children()}
                 </div>
-                <div id="ft" className="pure-u-1">
+                <div id="ft" className="grid-100">
                     <Footer />
                 </div>
             </div>
